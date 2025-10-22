@@ -1,3 +1,4 @@
+/* --- EXISTING GLOBAL AND LAYOUT STYLES --- */
 body {
   font-family: 'Poppins', sans-serif;
   background: #f6f8fa;
@@ -23,6 +24,7 @@ h1 {
   color: #0078d7;
 }
 
+/* Button Styles */
 .btn {
   background: #0078d7;
   color: white;
@@ -38,6 +40,7 @@ h1 {
   background: #005fa3;
 }
 
+/* --- OLD OPTION STYLES (Kept for completeness but unused by new JS) --- */
 .option {
   background: #f1f1f1;
   border-radius: 8px;
@@ -51,10 +54,77 @@ h1 {
   background: #e0e0e0;
 }
 
+/* Old Feedback Classes (Kept for completeness but superseded by new classes below) */
 .correct {
   background: #c8e6c9 !important;
 }
 
 .incorrect {
   background: #ffcdd2 !important;
+}
+
+
+/* --- NEW STYLES FOR DYNAMIC INPUTS (RADIO/CHECKBOX) --- */
+
+#options {
+    text-align: left; /* Align question options to the left */
+    margin-top: 20px;
+}
+
+/* Container for the new option structure (input + label) */
+.option-container {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1; /* Reusing the old option background color */
+  border-radius: 8px;
+  padding: 10px;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option-container:hover {
+  background: #e0e0e0; /* Reusing the old option hover color */
+}
+
+.option-container input {
+  /* Style for the actual radio/checkbox input */
+  margin-right: 12px;
+  transform: scale(1.2); /* Slightly larger input for better visibility */
+}
+
+.option-container label {
+  /* Style for the option text */
+  flex-grow: 1;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+/* Feedback Styles for the NEW structure (using your existing colors) */
+/* This highlights the whole container for correct options */
+.option-container.correct {
+  background: #c8e6c9 !important; /* Light green */
+  border: 1px solid #94b995;
+}
+
+/* This highlights the whole container for incorrect selections */
+.option-container.incorrect {
+  background: #ffcdd2 !important; /* Light red */
+  border: 1px solid #d79a9f;
+}
+
+/* Style for the specific 'Submit' button used in multi-select questions */
+.submit-btn {
+    width: 100%; /* Make the submit button full width */
+}
+
+/* Disable styles for already answered questions */
+.option-container input:disabled {
+    cursor: default;
+}
+
+.option-container input:disabled + label {
+    cursor: default;
+    color: #555;
 }
