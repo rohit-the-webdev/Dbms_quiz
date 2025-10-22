@@ -128,3 +128,34 @@ h1 {
     cursor: default;
     color: #555;
 }
+/* Add this section to your style.css */
+
+/* --- NEW STYLES FOR TYPING INPUT --- */
+#typing-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.text-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s;
+}
+
+/* Feedback for Typing Input */
+.text-input.correct-input {
+    border-color: #c8e6c9; /* Light green border */
+    background-color: #e6ffe6; /* Very light green background */
+}
+
+.text-input.incorrect-input {
+    border-color: #ffcdd2; /* Light red border */
+    background-color: #fff0f0; /* Very light red background */
+}
