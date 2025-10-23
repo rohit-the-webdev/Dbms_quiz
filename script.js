@@ -1,3 +1,9 @@
+// --- Constants for Local Storage Keys ---
+const CURRENT_QUESTION_KEY = 'quizCurrentQuestion';
+const CURRENT_SCORE_KEY = 'quizScore';
+const QUESTIONS_SHUFFLE_KEY = 'quizQuestionsShuffle';
+
+
 // --- Shuffle Function (Remains the same) ---
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -6,21 +12,100 @@ function shuffleArray(array) {
   }
 }
 
+/**
+ * Normalizes and cleans a string for comparison.
+ */
+function normalizeAnswer(str) {
+    if (typeof str !== 'string') return '';
+    return str.trim().toUpperCase().replace(/\s+/g, ' '); 
+}
+
 // Global variables
 let currentQuestion = 0;
 let score = 0;
-let answered = false; // Flag to prevent multiple checks
+let answered = false; 
 
 const questionText = document.getElementById("question-text");
-const optionsContainer = document.getElementById("options"); // Changed to optionsContainer
+const optionsContainer = document.getElementById("options");
 const nextBtn = document.getElementById("next-btn");
 const result = document.getElementById("result");
 const scoreBox = document.getElementById("score-box");
 const scoreText = document.getElementById("score");
 const restartBtn = document.getElementById("restart-btn");
 
-// Shuffle questions at the start
-shuffleArray(questions);
+
+// ==========================================================
+// --- NEW: LOCAL STORAGE FUNCTIONS ---
+// ==========================================================
+
+function saveQuizState() {
+    try {
+        // 1. Save index and score
+        localStorage.setItem(CURRENT_QUESTION_KEY, currentQuestion.toString());
+        localStorage.setItem(CURRENT_SCORE_KEY, score.toString());
+        
+        // 2. Save the currently shuffled order of questions
+        // This is crucial so the user doesn't see a new random question on resume
+        localStorage.setItem(QUESTIONS_SHUFFLE_KEY, JSON.stringify(questions));
+    } catch (e) {
+        console.error("Error saving quiz state to localStorage:", e);
+    }
+}
+
+function loadQuizState() {
+    try {
+        const savedIndex = localStorage.getItem(CURRENT_QUESTION_KEY);
+        const savedScore = localStorage.getItem(CURRENT_SCORE_KEY);
+        const savedQuestionsJSON = localStorage.getItem(QUESTIONS_SHUFFLE_KEY);
+
+        if (savedQuestionsJSON) {
+            const savedQuestions = JSON.parse(savedQuestionsJSON);
+            
+            // Check if the saved question count matches the current questions array length
+            // This prevents errors if you change the questions.js file
+            if (savedQuestions.length === questions.length) {
+                // Overwrite the globally loaded 'questions' array with the saved shuffled state
+                questions.length = 0; // Clear the array
+                questions.push(...savedQuestions); // Populate it with the saved state
+                
+                // Load saved progress
+                currentQuestion = parseInt(savedIndex) || 0;
+                score = parseInt(savedScore) || 0;
+                console.log(`Resuming quiz from Question: ${currentQuestion + 1}, Score: ${score}`);
+                return true;
+            } else {
+                console.warn("Questions file changed. Starting a new quiz.");
+                return false;
+            }
+        }
+    } catch (e) {
+        console.error("Error loading quiz state from localStorage:", e);
+    }
+    return false;
+}
+
+function clearQuizState() {
+    localStorage.removeItem(CURRENT_QUESTION_KEY);
+    localStorage.removeItem(CURRENT_SCORE_KEY);
+    localStorage.removeItem(QUESTIONS_SHUFFLE_KEY);
+}
+
+
+// ==========================================================
+// --- INITIALIZATION ---
+// ==========================================================
+
+const isResuming = loadQuizState();
+
+// If not resuming, or if the load failed, shuffle the new array.
+if (!isResuming) {
+    shuffleArray(questions);
+}
+
+
+// ==========================================================
+// --- CORE QUIZ LOGIC (Modified to call saveQuizState) ---
+// ==========================================================
 
 function showQuestion() {
   answered = false;
@@ -33,6 +118,9 @@ function showQuestion() {
     document.getElementById("quiz-box").style.display = "none";
     scoreBox.style.display = "block";
     scoreText.textContent = `${score} / ${questions.length}`;
+    
+    // NEW: Clear state when quiz is finished
+    clearQuizState();
     return;
   }
 
@@ -40,7 +128,6 @@ function showQuestion() {
   questionText.textContent = `${currentQuestion + 1}. ${q.question}`;
   optionsContainer.innerHTML = "";
   
-  // Check for Short-Answer/Typing Question (if options array is missing or empty)
   const isTypingQuestion = !q.options || q.options.length === 0;
 
   if (isTypingQuestion) {
@@ -59,7 +146,6 @@ function showQuestion() {
     submitBtn.classList.add("btn", "submit-btn");
     submitBtn.textContent = "Submit Answer";
     
-    // Attach the checkAnswer logic to the submit button
     submitBtn.addEventListener("click", checkAnswer); 
 
     inputContainer.appendChild(inputField);
@@ -67,9 +153,8 @@ function showQuestion() {
     optionsContainer.appendChild(inputContainer);
 
   } else {
-    // --- RENDER MULTIPLE/SINGLE CHOICE OPTIONS (Original Logic) ---
+    // --- RENDER MULTIPLE/SINGLE CHOICE OPTIONS ---
     
-    // Create a form element for the radio/checkboxes
     const optionsForm = document.createElement("form");
     optionsForm.id = "options-form";
 
@@ -103,33 +188,18 @@ function showQuestion() {
     
     // --- DYNAMIC EVENT LISTENING ---
     if (isMultiSelect) {
-      // Create a specific submission button for multi-select
       const submitBtn = document.createElement("button");
       submitBtn.id = "submit-answer-btn";
       submitBtn.classList.add("btn", "submit-btn");
       submitBtn.textContent = "Submit Answer";
       
-      // Attach the checkAnswer logic to the submit button click
       submitBtn.addEventListener("click", checkAnswer); 
       optionsContainer.appendChild(submitBtn);
       
     } else {
-      // For single-select, attach the checkAnswer logic to the form's change event
       optionsForm.addEventListener("change", checkAnswer);
     }
   }
-}
-
-/**
- * Normalizes and cleans a string for comparison.
- * Edge cases handled: Case-insensitivity, trimming whitespace.
- * @param {string} str The string to normalize.
- * @returns {string} The normalized string.
- */
-function normalizeAnswer(str) {
-    if (typeof str !== 'string') return '';
-    // Convert to uppercase and remove all leading/trailing/multiple internal whitespace
-    return str.trim().toUpperCase().replace(/\s+/g, ' '); 
 }
 
 function checkAnswer(event) {
@@ -138,13 +208,15 @@ function checkAnswer(event) {
   const q = questions[currentQuestion];
   const isTypingQuestion = !q.options || q.options.length === 0;
 
-  // Prevent default button behavior
   if (event && event.preventDefault) {
       event.preventDefault();
   }
   
-  // --- A. HANDLE TYPING QUESTIONS ---
+  let isScorePoint = false;
+  let feedback = "";
+
   if (isTypingQuestion) {
+    // --- A. HANDLE TYPING QUESTIONS ---
     const inputField = document.getElementById("user-answer-input");
     const submitBtn = document.getElementById("submit-answer-btn");
 
@@ -153,9 +225,6 @@ function checkAnswer(event) {
     
     inputField.disabled = true;
     submitBtn.disabled = true;
-
-    let feedback = "";
-    let isScorePoint = false;
 
     if (userAnswer === correctAnswer) {
         feedback = "✅ Correct!";
@@ -166,19 +235,11 @@ function checkAnswer(event) {
         inputField.classList.add("incorrect-input");
     }
     
-    if (isScorePoint) {
-      score++;
-    }
-
     // Final Result Display
-    result.innerHTML = `
-        ${feedback}
-        <br>
-        The correct answer was: <strong>${q.answer}</strong>
-    `;
+    result.innerHTML = `${feedback}<br>The correct answer was: <strong>${q.answer}</strong>`;
 
   } else {
-    // --- B. HANDLE MULTI/SINGLE CHOICE QUESTIONS (Original Logic) ---
+    // --- B. HANDLE MULTI/SINGLE CHOICE QUESTIONS ---
     const isMultiSelect = Array.isArray(q.answer);
     let userAnswers = [];
     const optionContainers = document.querySelectorAll("#options .option-container");
@@ -199,15 +260,11 @@ function checkAnswer(event) {
     
     // 2. Determine correctness and feedback type
     let correctAnswers = Array.isArray(q.answer) ? q.answer : [q.answer]; 
-    let feedback = "";
     
     const hasAllCorrect = correctAnswers.every(ans => userAnswers.includes(ans));
     const hasNoIncorrect = userAnswers.every(ans => correctAnswers.includes(ans));
-    
     const allCorrectAndOnlyCorrect = hasAllCorrect && hasNoIncorrect && (userAnswers.length === correctAnswers.length);
     
-    let isScorePoint = false;
-
     if (allCorrectAndOnlyCorrect) {
       feedback = "✅ Correct!";
       isScorePoint = true;
@@ -221,49 +278,46 @@ function checkAnswer(event) {
       }
     }
 
-    // 3. Update score
-    if (isScorePoint) {
-      score++;
-    }
-    
-    // 4. Highlight correct/incorrect options for feedback
+    // 3. Highlight correct/incorrect options for feedback
     optionContainers.forEach(container => {
       const input = container.querySelector('input');
-      
       const isUserSelected = userAnswers.includes(input.value);
       const isActualCorrect = correctAnswers.includes(input.value);
 
       if (isActualCorrect) {
         container.classList.add('correct'); 
       } 
-      
       if (isUserSelected && !isActualCorrect) {
         container.classList.add('incorrect'); 
       }
     });
 
-    // 5. Final Result Display
+    // 4. Final Result Display
     const displayAnswers = correctAnswers.join(" / ");
-    
-    result.innerHTML = `
-      ${feedback}
-      <br>
-      The correct answer(s) were: <strong>${displayAnswers}</strong>
-    `;
-  } // End of Choice Questions Logic
+    result.innerHTML = `${feedback}<br>The correct answer(s) were: <strong>${displayAnswers}</strong>`;
+  } 
 
+  // --- SCORE UPDATE AND SAVE ---
+  if (isScorePoint) {
+    score++;
+  }
+  
   answered = true;
-  nextBtn.style.display = 'block'; // Show Next button
+  nextBtn.style.display = 'block'; 
+  
+  // NEW: Save state after checking the answer
+  saveQuizState();
 }
 
 
-// Event listener for the Next button (remains the same)
+// --- EVENT LISTENERS ---
 nextBtn.addEventListener("click", () => {
   currentQuestion++;
   showQuestion();
+  // NEW: Save state after moving to the next question
+  saveQuizState();
 });
 
-// Event listener for the Restart button (remains the same)
 restartBtn.addEventListener("click", () => {
   currentQuestion = 0;
   score = 0;
@@ -273,8 +327,12 @@ restartBtn.addEventListener("click", () => {
   // Re-shuffle the array every time the quiz is restarted
   shuffleArray(questions);
   
+  // NEW: Clear saved state when restarting
+  clearQuizState();
+  
   showQuestion();
 });
 
 // Start the quiz
 showQuestion();
+  
