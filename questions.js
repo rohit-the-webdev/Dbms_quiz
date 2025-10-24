@@ -1,2035 +1,1245 @@
 const questions = [
-  // --- WEEK 1: ASSIGNMENT 1 (Questions 1-15) ---
+  // --- Week 1: Assignment 1 (10 Questions) ---
   {
-    question: "Which of the following is not a function of a Database Management System (DBMS)?",
+    question: "How do spear-phishing attacks differ from general phishing attacks?",
     options: [
-      "Data storage management",
-      "Data backup and recovery",
-      "Data hardware repair",
-      "Data integrity management"
+      "They use only phone calls as a medium",
+      "They are randomly sent to thousands of people",
+      "They target specific individuals with personalized messages",
+      "They do not involve malware at all"
     ],
-    answer: "Data hardware repair"
+    answer: "They target specific individuals with personalized messages"
   },
   {
-    question: "What does DBMS stand for?",
+    question: "What does ransomware typically do to a victim's files?",
     options: [
-      "Data Based Model System",
-      "Database Management Structure",
-      "Database Management System",
-      "Digital Base Model Software"
+      "Deletes them permanently",
+      "Encrypts them to prevent access",
+      "Transfers them to another device",
+      "Makes them publicly available online"
     ],
-    answer: "Database Management System"
+    answer: "Encrypts them to prevent access"
   },
   {
-    question: "Which of the following is a characteristic of a database?",
+    question: "Which of the following are examples of systems protected under Critical Infrastructure Protection (CIP)?",
     options: [
-      "Volatile data",
-      "Data redundancy",
-      "Shared data access",
-      "Temporary storage"
+      "Gaming consoles and home Wi-Fi routers",
+      "SCADA systems, Industrial Control Systems (ICS), and operational technology",
+      "Social media networks and entertainment apps",
+      "Educational platforms and student databases"
     ],
-    answer: "Shared data access"
+    answer: "SCADA systems, Industrial Control Systems (ICS), and operational technology"
   },
   {
-    question: "In a database system, who is responsible for managing the overall system environment and ensuring its efficient functioning?",
+    question: "_________ is the protection of information assets that use, store, or transmit information through the application of policy, education, and technology.",
     options: [
-      "Database Administrator",
-      "End User",
-      "Application Programmer",
-      "Data Analyst"
+      "Network Security",
+      "Operations Security",
+      "Communications Security",
+      "Information Security"
     ],
-    answer: "Database Administrator"
+    answer: "Information Security"
   },
   {
-    question: "What is the purpose of a schema in a database?",
+    question: "_________ is the property of information that describes how data is whole, complete, and uncorrupted.",
     options: [
-      "Stores the data values",
-      "Acts as a blueprint for database structure",
-      "Tracks hardware performance",
-      "Manages backup operations"
+      "Integrity",
+      "Availability",
+      "Confidentiality",
+      "Accuracy"
     ],
-    answer: "Acts as a blueprint for database structure"
+    answer: "Integrity"
   },
   {
-    question: "Which of the following best describes an instance of a database?",
+    question: "To protect the confidentiality of information, which of the following measures can be taken:",
     options: [
-      "The logical design of the database",
-      "The actual data stored at a particular moment",
-      "A snapshot of a database administrator's role",
-      "A description of data types only"
+      "Information classification",
+      "Secure document storage",
+      "Application of general security policies",
+      "All the above"
     ],
-    answer: "The actual data stored at a particular moment"
+    answer: "All the above"
   },
   {
-    question: "Which data model uses entities, attributes, and relationships to represent data?",
+    question: "In the context of cybersecurity, how can technology act as a source of threat?",
     options: [
-      "Hierarchical model",
-      "Relational model",
-      "Network model",
-      "Entity-Relationship model"
+      "It includes tools that can attack other networks",
+      "It increases internet traffic for organizations",
+      "It automates routine business operations",
+      "Through software that prevents users from sharing information"
     ],
-    answer: "Entity-Relationship model"
+    answer: "It includes tools that can attack other networks"
   },
   {
-    question: "What component is primarily responsible for interacting with the DBMS through applications?",
+    question: "True or False: Information Security is not a process, but a product or a technology.",
     options: [
-      "Casual users",
-      "Database designers",
-      "Application programmers",
-      "System analysts"
+      "True",
+      "False"
     ],
-    answer: "Application programmers"
+    answer: "False"
   },
   {
-    question: "Which level of database architecture provides a view of the data as seen by individual users?",
+    question: "_________ is a manipulation technique that exploits human error to gain private information, access, or valuables.",
     options: [
-      "Internal level",
-      "Conceptual level",
-      "External level",
-      "Physical level"
+      "Session Hijacking",
+      "Salting",
+      "Social Engineering",
+      "Smurf Attack"
     ],
-    answer: "External level"
+    answer: "Social Engineering"
   },
   {
-    question: "The conceptual schema describes:",
+    question: "Which of the following scenarios represents a breach involving protected health information (PHI)?",
     options: [
-      "The logical structure of the entire database",
-      "A specific user's view",
-      "Data storage format",
-      "File system details"
+      "Sharing a patient's prescription history along with their name",
+      "Forwarding anonymous health statistics to a research team",
+      "Posting a hospital's general policy on patient intake",
+      "Transmitting appointment schedules without personal details"
     ],
-    answer: "The logical structure of the entire database"
+    answer: "Sharing a patient's prescription history along with their name"
+  },
+
+  // --- Week 2: Assignment 2 (10 Questions) ---
+  {
+    question: "What is the primary purpose of the McCumber Cube?",
+    options: [
+      "To develop network security protocols",
+      "To create operating systems",
+      "To establish and evaluate information security programs",
+      "To analyze network traffic performance"
+    ],
+    answer: "To establish and evaluate information security programs"
   },
   {
-    question: "Which of the following are types of database users?",
+    question: "Consider the following statements\na. The first dimension of the McCumber cube identifies the goals to protect the cyber world.\nb. The second dimension of the McCumber cube focuses on the problems of protecting all of the states of data in the cyber world.\nc. The third dimension of the McCumber cube defines the types of controls used to protect the cyber world.\nWhich of the above statements are True?",
     options: [
-      "Casual users",
-      "Application programmers",
-      "DBA",
-      "Data miners"
+      "Only a is true",
+      "a and b are true",
+      "b and c are true",
+      "a,b,and c are true"
+    ],
+    answer: "a,b,and c are true"
+  },
+  {
+    question: "In a malware detection system, when legitimate business software is incorrectly identified as malicious, this represents:",
+    options: [
+      "True Positive (TP)",
+      "False Positive (FP)",
+      "True Negative (TN)",
+      "False Negative (FN)"
+    ],
+    answer: "False Positive (FP)"
+  },
+  {
+    question: "True or False: A False Negative in malware detection means the system correctly identifies a safe file as non-malicious.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: "False"
+  },
+  {
+    question: "A vulnerability in cybersecurity is best defined as:",
+    options: [
+      "A malicious program designed to damage systems",
+      "A security patch released by software vendors",
+      "A method used by attackers to gain unauthorized access",
+      "A weakness or flaw in technology, processes, or human behavior that leaves systems open to exploitation"
+    ],
+    answer: "A weakness or flaw in technology, processes, or human behavior that leaves systems open to exploitation"
+  },
+  {
+    question: "An exploit is primarily:",
+    options: [
+      "A weakness in system security that needs patching",
+      "A technique used to compromise a system",
+      "A novel self-protecting antivirus software",
+      "A security framework for risk assessment"
+    ],
+    answer: "A technique used to compromise a system"
+  },
+  {
+    question: "True or False: Accuracy is an attribute of information that describes how data is genuine or original rather than reproduced or fabricated.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: "False"
+  },
+  {
+    question: "What is a recommended defense against phishing emails?",
+    options: [
+      "Always open attachments to check content",
+      "Click links only if the sender is familiar",
+      "Verify the source and avoid clicking suspicious links",
+      "Forward the email to colleagues"
+    ],
+    answer: "Verify the source and avoid clicking suspicious links"
+  },
+  {
+    question: "Which of the following are best practices for balancing information security and access? (Select all that apply.)",
+    options: [
+      "Regular review of user access rights",
+      "Implementing role-based access control",
+      "Granting blanket access to all employees",
+      "Monitoring and auditing access logs"
     ],
     answer: [
-      "Casual users",
-      "Application programmers",
-      "DBA",
-      "Data miners"
+      "Regular review of user access rights",
+      "Implementing role-based access control",
+      "Monitoring and auditing access logs"
     ]
   },
   {
-    question: "Key characteristics of a database system include:",
-    options: [
-      "Concurrent access",
-      "Controlled redundancy",
-      "Complex redundancy",
-      "Data independence"
-    ],
-    answer: [
-      "Concurrent access",
-      "Controlled redundancy",
-      "Data independence"
-    ]
-  },
-  {
-    question: "Functions of a DBMS include:",
-    options: [
-      "Data retrieval",
-      "Schema modeling",
-      "Concurrency control",
-      "Disk formatting"
-    ],
-    answer: [
-      "Data retrieval",
-      "Schema modeling",
-      "Concurrency control"
-    ]
-  },
-  {
-    question: "The three-schema architecture includes:",
-    options: [
-      "Internal schema",
-      "External schema",
-      "Transactional schema",
-      "Conceptual schema"
-    ],
-    answer: [
-      "Internal schema",
-      "External schema",
-      "Conceptual schema"
-    ]
-  },
-  {
-    question: "The components of the DBMS environment typically include:",
+    question: "In an information system, which component is responsible for enabling communication and data transfer between devices?",
     options: [
       "Hardware",
       "Software",
-      "Data",
-      "Firewall"
-    ],
-    answer: [
-      "Hardware",
-      "Software",
+      "Networks",
       "Data"
-    ]
-  },
-  
-  // --- WEEK 2: ASSIGNMENT 2 (Questions 1-15) ---
-  {
-    question: "What is the purpose of a data dictionary in DBMS?",
-    options: [
-      "Execute transactions",
-      "Store user passwords",
-      "Store metadata about data",
-      "Encrypt data"
     ],
-    answer: "Store metadata about data"
+    answer: "Networks"
   },
+
+  // --- Week 3: Assignment 3 (10 Questions) ---
   {
-    question: "A sub-schema in a DBMS is:",
+    question: "A company's risk register lists \"third-party data breach\" as a critical risk. Which GRC function is primarily responsible for ensuring ongoing monitoring and mitigation of this risk?",
     options: [
-      "Physical layout of the database",
-      "Description of how data is stored on hardware",
-      "A user-specific view of the database",
-      "A system-level view of memory allocation"
+      "Governance",
+      "Reducible Breach",
+      "Compliance",
+      "Risk Management"
     ],
-    answer: "A user-specific view of the database"
+    answer: "Risk Management"
   },
   {
-    question: "Data independence refers to:",
+    question: "Which of the following statements is correct regarding the implementation of a GRC framework?",
     options: [
-      "Separation of data from storage",
-      "Isolation of data from users",
-      "Ability to modify schema without changing application",
-      "Data stored in the cloud"
+      "Implementing a GRC framework guarantees that an organization has immunity from all cyber threats.",
+      "A GRC framework helps organizations identify, assess, and mitigate cyber risks, but does not make them fully immune to threats.",
+      "GRC frameworks are only relevant for financial compliance and do not address cybersecurity.",
+      "GRC frameworks eliminate the need for cybersecurity controls."
     ],
-    answer: "Ability to modify schema without changing application"
+    answer: "A GRC framework helps organizations identify, assess, and mitigate cyber risks, but does not make them fully immune to threats."
   },
   {
-    question: "Which architecture supports data independence most effectively?",
+    question: "True or False: de facto standard refers to instructions that dictate certain standard behavior within an organization.",
     options: [
-      "One-tier",
-      "Two-tier",
-      "Three-tier",
-      "Client-server"
+      "True",
+      "False"
     ],
-    answer: "Three-tier"
+    answer: "False"
   },
   {
-    question: "In ER modeling, an attribute that can have multiple values for a single entity is called:",
+    question: "Which of the following refers to a detailed statement of what must be done to comply with policy?",
     options: [
-      "Simple attribute",
-      "Composite attribute",
-      "Derived attribute",
-      "Multi-valued attribute"
+      "de jure practices",
+      "guidelines",
+      "standard",
+      "procedures"
     ],
-    answer: "Multi-valued attribute"
+    answer: "standard"
   },
   {
-    question: "Which symbol is used to represent a relationship in ER diagrams?",
+    question: "If an organization's policy states \"All confidential data must be protected,\" which of the following would be the most appropriate standard to support this policy?",
     options: [
-      "Oval",
-      "Rectangle",
-      "Diamond",
-      "Ellipse"
+      "Employees should consider using strong passwords",
+      "Confidential data must be encrypted using AES-256",
+      "Steps for reporting a data breach",
+      "Encouraging staff to attend security training"
     ],
-    answer: "Diamond"
+    answer: "Confidential data must be encrypted using AES-256"
   },
   {
-    question: "In UML, entities are typically modeled as:",
+    question: "True or False: Compliance activities in a GRC framework are limited to following internal company policies and do not involve external laws or regulations.",
     options: [
-      "Use case diagrams",
-      "Activity diagrams",
-      "Classes",
-      "Attributes"
+      "True",
+      "False"
     ],
-    answer: "Classes"
+    answer: "False"
   },
   {
-    question: "An example of a weak entity is:",
+    question: "Which of the following are examples of preventive controls in IT security? (Select all that apply.)",
     options: [
-      "An employee with a unique ID",
-      "A department with a primary key",
-      "A dependent without a primary key",
-      "A product with unique serial number"
-    ],
-    answer: "A dependent without a primary key"
-  },
-  {
-    question: "In object modeling, encapsulation refers to:",
-    options: [
-      "Hiding the data implementation",
-      "Displaying all attributes",
-      "Linking data to multiple tables",
-      "Making data publicly accessible"
-    ],
-    answer: "Hiding the data implementation"
-  },
-  {
-    question: "In the relational model, each row in a relation is called:",
-    options: [
-      "Attribute",
-      "Tuple",
-      "Domain",
-      "Field"
-    ],
-    answer: "Tuple"
-  },
-  {
-    question: "Which are common components of DBMS architecture?",
-    options: [
-      "Query Processor",
-      "Storage Manager",
-      "Application Layer",
-      "Transaction Manager"
+      "Firewall configuration blocking unauthorized ports",
+      "Security awareness training for employees",
+      "Daily review of audit logs",
+      "Multi-factor authentication (MFA) for system access",
+      "Data backup and recovery solutions"
     ],
     answer: [
-      "Query Processor",
-      "Storage Manager",
-      "Transaction Manager"
+      "Firewall configuration blocking unauthorized ports",
+      "Security awareness training for employees",
+      "Multi-factor authentication (MFA) for system access"
     ]
   },
   {
-    question: "Features of Enhanced ER Model include:",
+    question: "Which framework, developed by the IT community, prioritizes IT control objectives and is specified by ISACA (Information Systems Audit and Control Association)?",
     options: [
-      "Generalization",
-      "Aggregation",
-      "Inheritance",
-      "Multithreading"
+      "COBIT",
+      "COSO",
+      "ISO/IEC 27001",
+      "NIST Cybersecurity Framework"
+    ],
+    answer: "COBIT"
+  },
+  {
+    question: "Which of the following statements about the NIST Cybersecurity Framework are NOT correct? (Select all that apply.)",
+    options: [
+      "It guarantees complete protection against all cyber threats.",
+      "Only large organizations can benefit from it.",
+      "The framework is rigid and cannot be customized to fit an organization's needs.",
+      "Implementing it is a one-time activity and does not require ongoing updates.",
+      "It deals only with technology and does not consider employee training or policies."
     ],
     answer: [
-      "Generalization",
-      "Aggregation",
-      "Inheritance"
+      "It guarantees complete protection against all cyber threats.",
+      "Only large organizations can benefit from it.",
+      "The framework is rigid and cannot be customized to fit an organization's needs.",
+      "Implementing it is a one-time activity and does not require ongoing updates.",
+      "It deals only with technology and does not consider employee training or policies."
     ]
   },
   {
-    question: "Relational algebra includes which of the following operations?",
+    question: "Which of the following statements is correct regarding ISO 27001 certification?",
     options: [
-      "Selection",
-      "Join",
-      "Compilation",
-      "Projection"
+      "ISO 27001 certification is only relevant for government agencies.",
+      "ISO 27001 certification can be issued to both organizations and individuals.",
+      "ISO 27001 certification can only be issued to organizations.",
+      "ISO 27001 certification is only available to individuals, not organizations."
     ],
-    answer: [
-      "Selection",
-      "Join",
-      "Projection"
-    ]
+    answer: "ISO 27001 certification can only be issued to organizations."
+  },
+
+  // --- Week 4: Assignment 4 (10 Questions) ---
+  {
+    question: "_________ is the actions taken by management to specify the intermediate goals and objectives of the organization in order to obtain specified strategic goals, followed by estimates and schedules for the allocation of resources necessary to achieve those goals and objectives.",
+    options: [
+      "Tactical Planning",
+      "Strategic Planning",
+      "Operational Planning",
+      "Business Continuity Planning"
+    ],
+    answer: "Tactical Planning"
   },
   {
-    question: "Which of the following are part of the relational model?",
+    question: "True or False: Strategic plans are used to create operational plans, which in turn are used to develop tactical plans.",
     options: [
-      "Domains",
-      "Tuples",
-      "Methods",
-      "Attributes"
+      "True",
+      "False"
     ],
-    answer: [
-      "Domains",
-      "Tuples",
-      "Attributes"
-    ]
+    answer: "False"
   },
   {
-    question: "In a data dictionary, which of the following are stored?",
+    question: "The actions taken by senior management to develop and implement a combined Disaster Recovery (DR) and Business Continuity (BC) policy, plan, and set of recovery teams is known as",
     options: [
-      "Names of tables",
-      "Data types",
-      "Indexes",
-      "User passwords"
+      "Business Resumption Planning (BRP)",
+      "Business Continuity Planning (BCP)",
+      "Disaster Recovery Planning (DCP)",
+      "Incident Response Planning (IRP)"
+    ],
+    answer: "Business Resumption Planning (BRP)"
+  },
+  {
+    question: "_________ is an adverse event that could result in loss of an information asset or assets, but does not currently threaten the viability of the entire organization.",
+    options: [
+      "Disaster",
+      "Phishing",
+      "Incident",
+      "Impact"
+    ],
+    answer: "Incident"
+  },
+  {
+    question: "Contingency Plan includes",
+    options: [
+      "Incident Response Planning (IRP), Organizational Planning (OP), and Business Continuity Planning (BCP)",
+      "Organizational Planning (OP), Disaster Recovery Planning (DRP), and Business Continuity Planning (BCP)",
+      "Incident Response Planning (IRP), Disaster Recovery Planning (DRP), and Tactical Planning (TP)",
+      "Incident Response Planning (IRP), Disaster Recovery Planning (DRP), and Business Continuity Planning (BCP)"
+    ],
+    answer: "Incident Response Planning (IRP), Disaster Recovery Planning (DRP), and Business Continuity Planning (BCP)"
+  },
+  {
+    question: "_________ is an investigation and assessment of adverse events that can affect the organization, conducted as a preliminary phase of the contingency planning process.",
+    options: [
+      "Business Contingency Plan",
+      "Direct Changeover Conversion Strategy",
+      "Crisis Management Planning",
+      "Business Impact Analysis"
+    ],
+    answer: "Business Impact Analysis"
+  },
+  {
+    question: "_________ is the total amount of time the system owner is willing to accept for a mission/business process outage or disruption, including all impact considerations.",
+    options: [
+      "Recovery Time Objective",
+      "Work Recovery Time",
+      "Maximum Tolerable Downtime",
+      "Total Recovery Time"
+    ],
+    answer: "Maximum Tolerable Downtime"
+  },
+  {
+    question: "The presence or execution of unknown programs or processes is a",
+    options: [
+      "Possible incident indicator",
+      "Probable incident indicator",
+      "Definite incident indicator",
+      "All the above"
+    ],
+    answer: "Possible incident indicator"
+  },
+  {
+    question: "An organization can choose from several cost-based strategies when planning for business continuity. _________ is a facility that provides only basic services, with no computer hardware or peripherals.",
+    options: [
+      "Hot Sites",
+      "Warm Sites",
+      "Cold Sites",
+      "Yellow Sites"
+    ],
+    answer: "Cold Sites"
+  },
+  {
+    question: "Which of the following statements accurately distinguish between a threat and an attack in cybersecurity? (Select all that apply.)",
+    options: [
+      "A threat is a potential danger, while an attack is an active action taken to exploit that danger",
+      "An attack can exist without a preceding threat",
+      "A threat actor often carries out an attack",
+      "An attack's success always depends on the existence of a vulnerability that the threat agent can exploit"
     ],
     answer: [
-      "Names of tables",
-      "Data types",
-      "Indexes"
+      "A threat is a potential danger, while an attack is an active action taken to exploit that danger",
+      "A threat actor often carries out an attack",
+      "An attack's success always depends on the existence of a vulnerability that the threat agent can exploit"
     ]
   },
 
-  // --- WEEK 3: ASSIGNMENT 3 (Questions 1-15) ---
+  // --- Week 5: Assignment 5 (10 Questions) ---
   {
-    question: "Which of the following is a key component of database architecture?",
+    question: "Which of the following statement is not true?",
     options: [
-      "Web server",
-      "Transaction manager",
-      "Operating system",
-      "Data warehouse"
+      "Policies direct how issues should be addressed and technologies should be used.",
+      "Information security policy is best disseminated in a comprehensive security education, training, and awareness (SETA) program.",
+      "Policies are more detailed than standards and describe the steps that must be taken to conform to standards.",
+      "Management must use policies as the basis for all information security planning, design, and deployment."
     ],
-    answer: "Transaction manager"
+    answer: "Policies are more detailed than standards and describe the steps that must be taken to conform to standards."
   },
   {
-    question: "In the relational model, a column is also known as a:",
+    question: "_________ is an organizational policy that provides detailed, targeted guidance to instruct all members of the organization in the use of a resource, such as one of its processes or technologies.",
     options: [
-      "Tuple",
-      "Relation",
-      "Attribute",
-      "Domain"
+      "Systems-specific security policy",
+      "Issue-specific security policy",
+      "Enterprise information security policy",
+      "General or security program policy"
     ],
-    answer: "Attribute"
+    answer: "Issue-specific security policy"
   },
   {
-    question: "Entity integrity ensures that:",
+    question: "Which of the following is not a component of Enterprise information security policy?",
     options: [
-      "All attributes are unique",
-      "Foreign keys are non-null",
-      "Primary key cannot be null",
-      "Duplicate values exist"
+      "Statement of Purpose",
+      "Information Security Responsibilities and Roles",
+      "Reference to other Information Standards and Guidelines",
+      "Statement of Policy"
     ],
-    answer: "Primary key cannot be null"
+    answer: "Statement of Policy"
   },
   {
-    question: "Referential integrity is maintained through:",
+    question: "_________ contains the specifications of authorization that govern the rights and privileges of users to a particular information asset.",
     options: [
-      "Triggers",
-      "Indexes",
-      "Foreign keys",
-      "Cursors"
+      "Access Control List (ACL)",
+      "Capabilities Table",
+      "Configuration Rules",
+      "Authentication Protocol"
     ],
-    answer: "Foreign keys"
+    answer: "Access Control List (ACL)"
   },
   {
-    question: "Which operation in relational algebra is used to extract columns from a relation?",
+    question: "Access Control Matrix combines the information in",
     options: [
-      "Select",
-      "Project",
-      "Union",
-      "Join"
+      "Access Control List (ACL)s and Capability Tables.",
+      "Access Control List (ACL)s and Authentication Protocol.",
+      "Authentication Protocol and Capability Tables.",
+      "Configuration Rules and Capability Tables."
     ],
-    answer: "Project"
+    answer: "Access Control List (ACL)s and Capability Tables."
   },
   {
-    question: "Relational algebra is:",
+    question: "Which of the following best differentiates cyber hygiene from cybersecurity?",
     options: [
-      "Procedural",
-      "Non-procedural",
-      "Declarative",
-      "Logical"
+      "Cyber hygiene is hardware-focused, while cybersecurity is software-focused.",
+      "Cyber hygiene is reactive in nature, while cybersecurity is always proactive.",
+      "Cyber hygiene involves routine practices for maintaining digital health, whereas cybersecurity includes broader strategies, technologies, and incident response.",
+      "Cyber hygiene focuses only on personal devices, while cybersecurity is limited to organizations."
     ],
-    answer: "Procedural"
+    answer: "Cyber hygiene involves routine practices for maintaining digital health, whereas cybersecurity includes broader strategies, technologies, and incident response."
   },
   {
-    question: "Tuple relational calculus is based on:",
+    question: "True or False: Configuration rules govern how a security system reacts to the data it receives.",
     options: [
-      "Attributes",
-      "Values",
-      "Tuples",
-      "Tables"
+      "True",
+      "False"
     ],
-    answer: "Tuples"
+    answer: "True"
   },
   {
-    question: "Which of the following represents a constraint in relational model?",
+    question: "Which of the following is not true about Systems-Specific Security Policies (SysSPs)?",
     options: [
-      "Syntax rule",
-      "Function rule",
-      "Domain constraint",
-      "Object rule"
+      "SysSPs can be separated into two general groups, managerial guidance SysSPs and technical specifications SysSPs.",
+      "SysSPs function as standards or procedures to be used when configuring or maintaining systems.",
+      "SysSPs can be combined into a single policy document that contains elements of both managerial guidance SysSPs and technical specifications SysSPs.",
+      "SysSPs can be developed at the same time as Issue-specific policies (ISSPs), or they can be prepared after their related ISSPs."
     ],
-    answer: "Domain constraint"
+    answer: "SysSPs can be developed at the same time as Issue-specific policies (ISSPs), or they can be prepared after their related ISSPs."
   },
   {
-    question: "A functional dependency is a relationship between:",
+    question: "Which of the following are the basic rules that should be followed when shaping a policy?",
     options: [
-      "Relations",
-      "Entities",
-      "Attributes",
-      "Tables"
+      "Never conflict with law",
+      "Properly supported and administered",
+      "Involve end users of information systems",
+      "All the above"
     ],
-    answer: "Attributes"
+    answer: "All the above"
   },
   {
-    question: "In normalization, 3NF removes:",
+    question: "The statement “Use strong passwords, frequently changed.” is an example of",
     options: [
-      "Repeating groups",
-      "Partial dependencies",
-      "Transitive dependencies",
-      "Candidate keys"
+      "Practice",
+      "Standard",
+      "Guideline",
+      "Policy"
     ],
-    answer: "Transitive dependencies"
+    answer: "Policy"
+  },
+
+  // --- Week 6: Assignment 6 (10 Questions) ---
+  {
+    question: "Risk management involves three major undertakings:",
+    options: [
+      "Risk Auditing, Risk Assessment, and Risk Control",
+      "Risk Identification, Risk Assessment, and Risk Auditing",
+      "Risk Identification, Risk Assessment, and Risk Control",
+      "Risk Monitoring, Risk Assessment, and Risk Auditing"
+    ],
+    answer: "Risk Identification, Risk Assessment, and Risk Control"
   },
   {
-    question: "Which of the following are relational algebra operations?",
+    question: "Determine Loss Frequency (Likelihood) comes under:",
     options: [
-      "Union",
-      "Join",
-      "Difference",
-      "Aggregate"
+      "Risk Identification",
+      "Risk Auditing",
+      "Risk Monitoring",
+      "Risk Assessment"
+    ],
+    answer: "Risk Assessment"
+  },
+  {
+    question: "Residual risk is a combined function of:",
+    options: [
+      "(1) a threat less the effect of threat-reducing safeguards, (2) a vulnerability less the effect of vulnerability-reducing safeguards, and (3) an asset less the effect of asset value-reducing safeguards.",
+      "(1) a threat less the effect of threat-reducing safeguards, (2) a vulnerability plus the effect of vulnerability-reducing safeguards, and (3) an asset less the effect of asset value-reducing safeguards",
+      "(1) a threat plus the effect of threat-reducing safeguards, (2) a vulnerability plus the effect of vulnerability-reducing safeguards, and (3) an asset plus the effect of asset value-reducing safeguards",
+      "(1) a threat plus the effect of threat-reducing safeguards, (2) a vulnerability plus the effect of vulnerability-reducing safeguards, and (3) an asset less the effect of asset value-reducing safeguards"
+    ],
+    answer: "(1) a threat less the effect of threat-reducing safeguards, (2) a vulnerability less the effect of vulnerability-reducing safeguards, and (3) an asset less the effect of asset value-reducing safeguards."
+  },
+  {
+    question: "Risk tolerance defines the quantity and nature of risk that organizations are willing to accept as they evaluate the trade-offs between perfect security and unlimited accessibility.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: "True"
+  },
+  {
+    question: "The calculation of the likelihood of an attack coupled with the attack frequency to determine the expected number of losses within a specified time range is called:",
+    options: [
+      "Attack Success Probability",
+      "Loss Frequency",
+      "Loss Magnitude",
+      "Probable Loss"
+    ],
+    answer: "Loss Frequency"
+  },
+  {
+    question: "Based on the given scenario for TechNova Inc., using the formula: Risk = (Loss Frequency × Loss Magnitude) + Uncertainty Term, calculate the final risk score for Asset A.",
+    options: [
+      "2.75",
+      "2.5",
+      "3.75",
+      "2.25"
+    ],
+    answer: "2.75"
+  },
+  {
+    question: "Which of the following is not true?",
+    options: [
+      "The mitigation risk control strategy attempts to shift risk to other assets, other processes, or other organizations.",
+      "The mitigation risk control strategy reduces the impact of the loss caused by a realized incident, disaster, or attack through effective contingency planning and preparation.",
+      "The mitigation risk control strategy attempts to reduce the impact of an attack rather than reduce the success of the attack itself.",
+      "The mitigation risk control strategy requires the creation of three types of contingency plans: the incident response plan, the disaster recovery plan, and the business continuity plan."
+    ],
+    answer: "The mitigation risk control strategy attempts to shift risk to other assets, other processes, or other organizations."
+  },
+  {
+    question: "The process of identifying and documenting specific and provable flaws in the organization’s information asset environment is known as:",
+    options: [
+      "Risk Assessment",
+      "Vulnerability Assessment",
+      "Asset Scanning",
+      "Risk Control"
+    ],
+    answer: "Vulnerability Assessment"
+  },
+  {
+    question: "“Blackmail threat of information disclosure” is an example of:",
+    options: [
+      "Espionage or trespass",
+      "Compromises to intellectual property",
+      "Information extortion",
+      "Sabotage or vandalism"
+    ],
+    answer: "Information extortion"
+  },
+  {
+    question: "Which of the following statements is/are true? (Select all that apply)",
+    options: [
+      "Risk management examines and documents the information technology security being used in an organization.",
+      "A key component of a risk management strategy is the identification and classification of the organization’s information assets, while prioritization is performed only after risk controls are implemented.",
+      "Risk management helps an organization identify vulnerabilities in its information systems and take carefully reasoned steps to assure the confidentiality, integrity, and availability of all components in those systems.",
+      "The goal of risk assessment is to assign a risk rating or score that represents the relative risk for a specific vulnerability of an information asset."
     ],
     answer: [
-      "Union",
-      "Join",
-      "Difference"
-    ]
-  },
-  {
-    question: "Functional dependencies are used for:",
-    options: [
-      "Query optimization",
-      "Integrity constraint enforcement",
-      "Normalization",
-      "Data deletion"
-    ],
-    answer: [
-      "Integrity constraint enforcement",
-      "Normalization"
-    ]
-  },
-  {
-    question: "Characteristics of 1NF include:",
-    options: [
-      "Atomic values",
-      "No repeating groups",
-      "Referential integrity",
-      "Composite keys"
-    ],
-    answer: [
-      "Atomic values",
-      "No repeating groups"
-    ]
-  },
-  {
-    question: "Which dependencies can lead to anomalies in databases?",
-    options: [
-      "Transitive",
-      "Multivalued",
-      "Join",
-      "Normal"
-    ],
-    answer: [
-      "Transitive",
-      "Multivalued",
-      "Join"
-    ]
-  },
-  {
-    question: "In database architecture, which of the following are part of the three-level architecture?",
-    options: [
-      "External level",
-      "Internal level",
-      "Conceptual level",
-      "Physical schema"
-    ],
-    answer: [
-      "External level",
-      "Internal level",
-      "Conceptual level"
-    ]
-  },
-// Please ask for the remaining questions (Weeks 4-12) if you need them.
-  // --- WEEK 4: ASSIGNMENT 4 (Questions 1-15) ---
-  {
-    question: "Which normal form eliminates partial dependency?",
-    options: [
-      "1NF",
-      "2NF",
-      "3NF",
-      "BCNF"
-    ],
-    answer: "2NF"
-  },
-  {
-    question: "A relation is in BCNF if:",
-    options: [
-      "Every determinant is a candidate key",
-      "It has no transitive dependencies",
-      "It is in 2NF",
-      "All attributes are atomic"
-    ],
-    answer: "Every determinant is a candidate key"
-  },
-  {
-    question: "Which decomposition ensures that no data is lost during joining?",
-    options: [
-      "Horizontal",
-      "Vertical",
-      "Lossless join",
-      "Redundant"
-    ],
-    answer: "Lossless join"
-  },
-  {
-    question: "A dependency preserving decomposition ensures that:",
-    options: [
-      "All dependencies are eliminated",
-      "All constraints are normalized",
-      "All functional dependencies are maintained",
-      "Redundant data exists"
-    ],
-    answer: "All functional dependencies are maintained"
-  },
-  {
-    question: "Which SQL statement is used to create a database table?",
-    options: [
-      "INSERT",
-      "UPDATE",
-      "CREATE",
-      "SELECT"
-    ],
-    answer: "CREATE"
-  },
-  {
-    question: "Which one is not a part of DML in SQL?",
-    options: [
-      "SELECT",
-      "DELETE",
-      "DROP",
-      "UPDATE"
-    ],
-    answer: "DROP"
-  },
-  {
-    question: "A view in SQL is:",
-    options: [
-      "A physical table",
-      "A virtual table",
-      "A primary key",
-      "A foreign key"
-    ],
-    answer: "A virtual table"
-  },
-  {
-    question: "Embedded SQL is used in:",
-    options: [
-      "SQL Server only",
-      "Database backups",
-      "Host programming languages",
-      "Web servers"
-    ],
-    answer: "Host programming languages"
-  },
-  {
-    question: "Which command removes a table from a database?",
-    options: [
-      "DELETE",
-      "ERASE",
-      "DROP",
-      "REMOVE"
-    ],
-    answer: "DROP"
-  },
-  {
-    question: "What does DDL stand for?",
-    options: [
-      "Data Derivation Language",
-      "Data Definition Language",
-      "Dynamic Data Language",
-      "Database Description Language"
-    ],
-    answer: "Data Definition Language"
-  },
-  {
-    question: "Which of the following are DDL commands?",
-    options: [
-      "CREATE",
-      "ALTER",
-      "DROP",
-      "SELECT"
-    ],
-    answer: [
-      "CREATE",
-      "ALTER",
-      "DROP"
-    ]
-  },
-  {
-    question: "Which statements are true about 3NF?",
-    options: [
-      "Removes transitive dependencies",
-      "Must be in 2NF",
-      "Every non-prime attribute is non-transitively dependent",
-      "Allows partial dependency"
-    ],
-    answer: [
-      "Removes transitive dependencies",
-      "Must be in 2NF",
-      "Every non-prime attribute is non-transitively dependent"
-    ]
-  },
-  {
-    question: "Which SQL commands are used to retrieve and manipulate data?",
-    options: [
-      "SELECT",
-      "INSERT",
-      "UPDATE",
-      "CREATE"
-    ],
-    answer: [
-      "SELECT",
-      "INSERT",
-      "UPDATE"
-    ]
-  },
-  {
-    question: "Which of the following are benefits of views in SQL?",
-    options: [
-      "Simplifies query",
-      "Provides security",
-      "Reduces data redundancy",
-      "Stores data permanently"
-    ],
-    answer: [
-      "Simplifies query",
-      "Provides security",
-      "Reduces data redundancy"
-    ]
-  },
-  {
-    question: "Which properties are ensured in a lossless-join decomposition?",
-    options: [
-      "No information loss",
-      "Reconstruct original relation",
-      "Allows redundant data",
-      "Retains all functional dependencies"
-    ],
-    answer: [
-      "No information loss",
-      "Reconstruct original relation"
+      "Risk management examines and documents the information technology security being used in an organization.",
+      "Risk management helps an organization identify vulnerabilities in its information systems and take carefully reasoned steps to assure the confidentiality, integrity, and availability of all components in those systems.",
+      "The goal of risk assessment is to assign a risk rating or score that represents the relative risk for a specific vulnerability of an information asset."
     ]
   },
 
-  // --- WEEK 5: ASSIGNMENT 5 (Questions 1-15) ---
+  // --- Week 7: Assignment 7 (10 Questions) ---
   {
-    question: "Which of the following is used to enforce constraints in SQL?",
+    question: "__________ is the principle that an individual is entrusted to safeguard and control equipment, keying material, and information and is answerable to proper authority for the loss or misuse of that equipment or information.",
     options: [
-      "CREATE",
-      "ALTER",
-      "INDEX",
-      "CONSTRAINT"
+      "Auditability",
+      "Accountability",
+      "Confidentiality",
+      "Responsibility"
     ],
-    answer: "CONSTRAINT"
+    answer: "Accountability"
   },
   {
-    question: "What is the primary purpose of an index in SQL?",
+    question: "Which of the following rings provides the least privileges in an Operating System?",
     options: [
-      "To enforce data integrity",
-      "To speed up data retrieval",
-      "To create foreign keys",
-      "To modify data"
+      "Ring 0",
+      "Ring 1",
+      "Ring 2",
+      "Ring 3"
     ],
-    answer: "To speed up data retrieval"
+    answer: "Ring 3"
   },
   {
-    question: "Which SQL command is used to declare a cursor?",
+    question: "Which of the following is not true about asymmetric encryption?",
     options: [
-      "CREATE",
-      "OPEN",
-      "DECLARE",
-      "FETCH"
+      "Asymmetric encryption incorporates mathematical operations involving both a public key and a private key to encipher or decipher a message.",
+      "Asymmetric encryption relies on asymmetric cryptography, also known as private key cryptography.",
+      "Rivest Shamir Adleman (RSA) is an example of asymmetric encryption.",
+      "Asymmetric cryptography has two primary use cases: authentication and confidentiality."
     ],
-    answer: "DECLARE"
+    answer: "Asymmetric encryption relies on asymmetric cryptography, also known as private key cryptography."
   },
   {
-    question: "Which of the following is true about triggers in SQL?",
+    question: "Which team is responsible for defending against cyber threats by implementing security measures and monitoring systems for suspicious activities?",
     options: [
-      "They are used to update data in the table",
-      "They automatically execute in response to certain events",
-      "They can only be used with primary keys",
-      "They require manual execution"
+      "Red Team",
+      "Yellow Team",
+      "Green Team",
+      "Blue Team"
     ],
-    answer: "They automatically execute in response to certain events"
+    answer: "Blue Team"
   },
   {
-    question: "A stored procedure in SQL is used for:",
+    question: "True or False : Attribution, the process of identifying the perpetrators of cyber attacks, is easily achievable in cyberspace.",
     options: [
-      "Data manipulation",
-      "Query optimization",
-      "Reusable operations",
-      "Trigger management"
+      "True",
+      "False"
     ],
-    answer: "Reusable operations"
+    answer: "False"
   },
   {
-    question: "The relational model is based on:",
+    question: "What does the \"Command and Control\" stage of the Intrusion Kill Chain involve?",
     options: [
-      "Tables and relations",
-      "Tree structure",
-      "Hierarchical organization",
-      "Object classes"
+      "Gaining initial access to target system",
+      "Executing malicious code on target system",
+      "Establishing a communication channel to remotely access the compromised system.",
+      "Exploiting vulnerabilities to gain control of target system"
     ],
-    answer: "Tables and relations"
+    answer: "Establishing a communication channel to remotely access the compromised system."
   },
   {
-    question: "Which of the following is a key feature of network data models?",
+    question: "Which layer of the OSI model provides reliable data transfer and error control of connections?",
     options: [
-      "Data is represented in a tree structure",
-      "Data is represented as a graph of linked records",
-      "Data is stored in flat files",
-      "Data is organized in objects"
+      "Network layer",
+      "Data Link layer",
+      "Physical layer",
+      "Transport layer"
     ],
-    answer: "Data is represented as a graph of linked records"
+    answer: "Transport layer"
   },
   {
-    question: "Which system uses the hierarchical data model?",
+    question: "Which of the following statements about ethical hacking is/are correct? (Select all that apply)",
     options: [
-      "IDMS",
-      "IMS",
-      "Oracle",
-      "DB2"
-    ],
-    answer: "IMS"
-  },
-  {
-    question: "The object-relational database model combines which two models?",
-    options: [
-      "Object-oriented and relational",
-      "Hierarchical and network",
-      "Flat file and relational",
-      "Network and object-oriented"
-    ],
-    answer: "Object-oriented and relational"
-  },
-  {
-    question: "In object databases, data is stored as:",
-    options: [
-      "Rows and columns",
-      "Classes and objects",
-      "Nodes and relationships",
-      "Graphs and nodes"
-    ],
-    answer: "Classes and objects"
-  },
-  {
-    question: "Which of the following are types of constraints in SQL?",
-    options: [
-      "PRIMARY KEY",
-      "FOREIGN KEY",
-      "NOT NULL",
-      "INDEX"
+      "Ethical hackers operate with explicit permission from the organization",
+      "Ethical hackers communicate findings to the organization.",
+      "Ethical hackers exploit a system's vulnerabilities for personal gain, without a formal agreement.",
+      "Ethical hacking is a proactive measure for security posture."
     ],
     answer: [
-      "PRIMARY KEY",
-      "FOREIGN KEY",
-      "NOT NULL"
+      "Ethical hackers operate with explicit permission from the organization",
+      "Ethical hackers communicate findings to the organization.",
+      "Ethical hacking is a proactive measure for security posture."
     ]
   },
   {
-    question: "Which SQL statements are used to create functions and procedures?",
+    question: "Which of the following statement is true?",
     options: [
-      "CREATE PROCEDURE",
-      "CREATE FUNCTION",
-      "INSERT PROCEDURE",
-      "CREATE INDEX"
+      "TCP is connectionless, and UDP is connection-oriented",
+      "TCP is connection-oriented, and UDP is connectionless",
+      "Both TCP and UDP are connectionless",
+      "Both TCP and UDP are connection-oriented"
+    ],
+    answer: "TCP is connection-oriented, and UDP is connectionless"
+  },
+  {
+    question: "What is the primary function of a Demilitarized Zone (DMZ) in network security architecture?",
+    options: [
+      "A special VPN to Increase the network speed for internal users",
+      "Create an isolated buffer zone for public-facing services, separating them from the internal network",
+      "Connect all internal devices directly to internet",
+      "Encrypt all outgoing network traffic"
+    ],
+    answer: "Create an isolated buffer zone for public-facing services, separating them from the internal network"
+  },
+
+  // --- Week 8: Assignment 8 (10 Questions) ---
+  {
+    question: "The five risk control strategies are:",
+    options: [
+      "Transference, mitigation, acceptance, optimization and termination",
+      "Defense, transference, mitigation, optimization, and termination",
+      "Defense, transference, mitigation, acceptance, and termination",
+      "Optimization, transference, mitigation, acceptance, and termination"
+    ],
+    answer: "Defense, transference, mitigation, acceptance, and termination"
+  },
+  {
+    question: "Which risk control strategy is also referred to as Risk Avoidance in NIST SP 800-30?",
+    options: [
+      "Optimization",
+      "Mitigation",
+      "Acceptance",
+      "Termination"
+    ],
+    answer: "Termination"
+  },
+  {
+    question: "Which of the following is not true?",
+    options: [
+      "Monoalphabetic substitution cipher incorporates only a single alphabet in the encryption process",
+      "Polyalphabetic substitution cipher incorporates two or more alphabets in the encryption process",
+      "Vigenère cipher is an advanced type of substitution cipher that uses a simple polyalphabetic code",
+      "Vernam cipher is implemented using tabula recta"
+    ],
+    answer: "Vernam cipher is implemented using tabula recta"
+  },
+  {
+    question: "Which of the following is NOT typically considered a factor affecting the cost of a control or safeguard?",
+    options: [
+      "Cost of development or acquisition of hardware, software, and services",
+      "Training fees for personnel",
+      "Cost of implementation (installation, configuration, and testing)",
+      "Marketing and advertising expenses"
+    ],
+    answer: "Marketing and advertising expenses"
+  },
+  {
+    question: "A website has an estimated value of $1 million. A hacker defacement scenario indicates that a deliberate act of sabotage could damage 10% of the site’s value. What is the Single Loss Expectancy (SLE)?",
+    options: [
+      "$1,000",
+      "$10,000",
+      "$100,000",
+      "$1,000,000"
+    ],
+    answer: "$100,000"
+  },
+  {
+    question: "A website has a Single Loss Expectancy (SLE) of $100,000. If the Annualized Rate of Occurrence (ARO) is estimated at 0.50, what is the Annualized Loss Expectancy (ALE)?",
+    options: [
+      "$5,000",
+      "$50,000",
+      "$100,000",
+      "$500,000"
+    ],
+    answer: "$50,000"
+  },
+  {
+    question: "Which of the following is true regarding Cost-Benefit Analysis (CBA), Annualized Loss Expectancy (ALE), and annualized cost of a safeguard (ACS)?",
+    options: [
+      "CBA = ALE(prior) - ALE(post) - ACS",
+      "CBA = ALE(prior) - ALE(post) + ACS",
+      "CBA = ALE(prior) + ALE(post) - ACS",
+      "CBA = ALE(prior) + ALE(post) + ACS"
+    ],
+    answer: "CBA = ALE(prior) - ALE(post) - ACS"
+  },
+  {
+    question: "Which of the following statements is/are correct? (Select all that apply)",
+    options: [
+      "Bit stream cipher is an encryption method that involves converting plaintext to ciphertext one bit at a time",
+      "Block cipher is an encryption method that involves dividing the plaintext into a sets of bits and then converting the plaintext to ciphertext one block at a time",
+      "Bit stream methods most commonly use algorithm functions like XOR, whereas block methods can use XOR, transposition, or substitution",
+      "Enciphering is the process of converting an encoded message back to its original readable form"
     ],
     answer: [
-      "CREATE PROCEDURE",
-      "CREATE FUNCTION"
+      "Bit stream cipher is an encryption method that involves converting plaintext to ciphertext one bit at a time",
+      "Block cipher is an encryption method that involves dividing the plaintext into a sets of bits and then converting the plaintext to ciphertext one block at a time",
+      "Bit stream methods most commonly use algorithm functions like XOR, whereas block methods can use XOR, transposition, or substitution"
     ]
   },
   {
-    question: "Which are characteristics of the hierarchical data model?",
+    question: "_________ are encrypted messages that can be mathematically proven as authentic.",
     options: [
-      "Data is stored in a tree-like structure",
-      "One-to-many relationships between records",
-      "Data is represented in objects",
-      "Relationships are defined by pointers"
+      "Digital signatures",
+      "Digital Certificates",
+      "Message Authentication Codes",
+      "Hash values"
     ],
-    answer: [
-      "Data is stored in a tree-like structure",
-      "One-to-many relationships between records"
-    ]
+    answer: "Digital signatures"
   },
   {
-    question: "Which of the following are characteristics of the object-relational model?",
+    question: "Which security concept ensures that a sender cannot deny having sent a message, by reversing public-key encryption to verify its origin?",
     options: [
-      "Supports complex data types",
-      "Supports both object and relational concepts",
-      "Used primarily for scientific data",
-      "Does not support inheritance"
+      "Confidentiality",
+      "Integrity",
+      "Nonrepudiation",
+      "Authentication"
     ],
-    answer: [
-      "Supports complex data types",
-      "Supports both object and relational concepts"
-    ]
+    answer: "Nonrepudiation"
+  },
+
+  // --- Week 9: Assignment 9 (10 Questions) ---
+  {
+    question: "What is the earliest notion of privacy in history?",
+    options: [
+      "Privacy as a legal right with clearly defined boundaries",
+      "Privacy as freedom, emphasizing the right to be let alone",
+      "Privacy as a commercial concept related to data protection",
+      "Privacy as a national security concern"
+    ],
+    answer: "Privacy as freedom, emphasizing the right to be let alone"
   },
   {
-    question: "Which of the following are advantages of using object databases?",
+    question: "True or False: Privacy is an absolute right in the context of law.",
     options: [
-      "Efficient handling of complex data",
-      "Support for object-oriented programming",
-      "Enhanced query optimization",
-      "Reduced need for joins"
+      "True",
+      "False"
+    ],
+    answer: "False"
+  },
+  {
+    question: "The acronym FIPP stands for:",
+    options: [
+      "Fair Internet Privacy Policies",
+      "Federal Information Protection Protocols",
+      "Fair Information Practice Principles",
+      "Foundational Internet Privacy Procedures"
+    ],
+    answer: "Fair Information Practice Principles"
+  },
+  {
+    question: "The __________ view argues that privacy is not an independent concept but can be reduced to other rights like property or liberty.",
+    options: [
+      "Economic",
+      "Feminist",
+      "Political",
+      "Reductionist"
+    ],
+    answer: "Reductionist"
+  },
+  {
+    question: "What is the core principle of informational privacy?",
+    options: [
+      "The right to remain anonymous at all times",
+      "The complete elimination of all personal data collection",
+      "The responsibility of companies to prioritize profits over user privacy",
+      "The ability of individuals to decide what personal information they share and with whom"
+    ],
+    answer: "The ability of individuals to decide what personal information they share and with whom"
+  },
+  {
+    question: "The FIPPs were first introduced in a report by:",
+    options: [
+      "The Federal Trade Commission (FTC)",
+      "The European Union",
+      "The US Secretary's Advisory Committee on Automated Personal Data Systems",
+      "A private industry consortium"
+    ],
+    answer: "The US Secretary's Advisory Committee on Automated Personal Data Systems"
+  },
+  {
+    question: "According to India's DPDP Act, what/who is the 'data principle'?",
+    options: [
+      "The company that determines the purpose & means of data processing",
+      "An external auditor who verifies a company's data protection measures",
+      "The individual whose data is being processed/used",
+      "A government agency responsible for enforcing the law"
+    ],
+    answer: "The individual whose data is being processed/used"
+  },
+  {
+    question: "Which of the following aspects of data privacy is NOT explicitly addressed in the FIPP?",
+    options: [
+      "The ability to access and correct personal data",
+      "The right to be forgotten",
+      "The requirement for secret personal data record-keeping systems",
+      "The need for individual consent for data collection"
+    ],
+    answer: "The right to be forgotten"
+  },
+  {
+    question: "Under India's DPDP Act, which of the following correctly describes the role of a Data Processor?",
+    options: [
+      "The individual whose personal data is collected and processed",
+      "The entity that determines the purpose and means of processing personal data",
+      "The entity that processes personal data on behalf of the Data Fiduciary",
+      "The government which is enforcing the Act"
+    ],
+    answer: "The entity that processes personal data on behalf of the Data Fiduciary"
+  },
+  {
+    question: "Which of the following are important reasons why information privacy is significant for organizations? (Select all that apply)",
+    options: [
+      "Protect sensitive customer and employee data from unauthorized access",
+      "Comply with legal and regulatory requirements related to data protection",
+      "To increase the amount of data collected regardless of its relevance for business competition",
+      "To maintain customer trust and protect the organization's reputation",
+      "Avoid financial penalties and legal consequences due to data breaches"
     ],
     answer: [
-      "Efficient handling of complex data",
-      "Support for object-oriented programming"
+      "Protect sensitive customer and employee data from unauthorized access",
+      "Comply with legal and regulatory requirements related to data protection",
+      "To maintain customer trust and protect the organization's reputation",
+      "Avoid financial penalties and legal consequences due to data breaches"
     ]
   },
 
-  // --- WEEK 6: ASSIGNMENT 6 (Questions 1-15) ---
+  // --- Week 10: Assignment 10 (10 Questions) ---
   {
-    question: "Why is data security critical in database management?",
+    question: "_________ is the phenomenon where individuals claim to value privacy, yet in practice, they trade their personal data for trivial benefits or fail to use measures to protect their privacy.",
     options: [
-      "To ensure quick access to data",
-      "To maintain the integrity of the data",
-      "To optimize database queries",
-      "To improve system performance"
+      "Privacy Fatigue",
+      "Privacy Negligence",
+      "Privacy Paradox",
+      "Privacy Breach"
     ],
-    answer: "To maintain the integrity of the data"
+    answer: "Privacy Paradox"
   },
   {
-    question: "What is the primary purpose of authorization in database security?",
+    question: "Which of the following is not true:",
     options: [
-      "To limit the number of users",
-      "To ensure data is secure from unauthorized access",
-      "To define database structure",
-      "To create backups of data"
+      "Personally Identifiable Information (PII) refers to any data that can be linked to a specific individual and used to reveal or misuse their identity",
+      "A social security number (SSN) can be considered as a sensitive PII",
+      "A person’s medical records can be considered as a non-sensitive PII",
+      "Non-sensitive PII would not cause significant harm to a person if leaked or stolen"
     ],
-    answer: "To ensure data is secure from unauthorized access"
+    answer: "A person’s medical records can be considered as a non-sensitive PII"
   },
   {
-    question: "Which of the following best describes discretionary access control (DAC)?",
+    question: "Which of the following best distinguishes the Right to Privacy from the Right to Anonymity?",
     options: [
-      "Access rights are granted by the system administrator",
-      "Users are given access to objects based on their own discretion",
-      "Access is restricted based on predefined security policies",
-      "The system allows full access without restrictions"
+      "Privacy is about preventing identity disclosure, while anonymity is about protecting personal information",
+      "Privacy ensures control over personal data and how it is shared, while anonymity ensures that actions cannot be traced back to an identifiable individual",
+      "Privacy is a technical safeguard, while anonymity is a legal right",
+      "Privacy applies only to digital data, while anonymity applies only to physical identity"
     ],
-    answer: "Users are given access to objects based on their own discretion"
+    answer: "Privacy ensures control over personal data and how it is shared, while anonymity ensures that actions cannot be traced back to an identifiable individual"
   },
   {
-    question: "In the context of database security, mandatory access control (MAC) means:",
+    question: "True or False: Personal data that has been de-identified, encrypted or pseudonymised, but can be used to re-identify a person, remains personal data and falls within the scope of the GDPR.",
     options: [
-      "Users have control over access to data",
-      "Data access is determined by the database system, not the user",
-      "The database uses discretionary policies",
-      "Access rights are set by the user level"
+      "True",
+      "False"
     ],
-    answer: "Data access is determined by the database system, not the user"
+    answer: "True"
   },
   {
-    question: "Which of the following is an example of role-based access control (RBAC)?",
+    question: "_________ has been defined as the intentional concealment of information.",
     options: [
-      "Assigning permissions based on user roles",
-      "Giving full access to every user",
-      "Restricting access based on individual decisions",
-      "Granting unrestricted access to all users"
-    ],
-    answer: "Assigning permissions based on user roles"
-  },
-  {
-    question: "The principle of least privilege in data security means:",
-    options: [
-      "Users should have access to only the information necessary for their tasks",
-      "Users should be allowed to access everything in the database",
-      "All users should be administrators",
-      "Users should not have access to any data"
-    ],
-    answer: "Users should have access to only the information necessary for their tasks"
-  },
-  {
-    question: "What is a potential risk of granting excessive privileges to users in a database?",
-    options: [
-      "Increased system performance",
-      "Unauthorized data modification or deletion",
-      "Improved data security",
-      "Efficient query execution"
-    ],
-    answer: "Unauthorized data modification or deletion"
-  },
-  {
-    question: "In Oracle's security model, Fine-Grained Access Control (FGAC) is used to:",
-    options: [
-      "Define users' roles",
-      "Restrict access to specific rows or columns of a table",
-      "Encrypt data stored in the database",
-      "Backup data at the table level"
-    ],
-    answer: "Restrict access to specific rows or columns of a table"
-  },
-  {
-    question: "Audit trails in database security are used to:",
-    options: [
-      "Monitor user access and activities",
-      "Create a backup of the database",
-      "Encrypt sensitive data",
-      "Define user roles"
-    ],
-    answer: "Monitor user access and activities"
-  },
-  {
-    question: "What is a privilege in the context of database security?",
-    options: [
-      "A specific permission granted to a user or role",
-      "The ability to create a backup",
-      "The power to modify database structure",
-      "The ability to create and drop tables"
-    ],
-    answer: "A specific permission granted to a user or role"
-  },
-  {
-    question: "Which of the following are security concerns in database management?",
-    options: [
-      "Data confidentiality",
-      "Data integrity",
-      "Data accessibility",
-      "Data storage"
-    ],
-    answer: [
-      "Data confidentiality",
-      "Data integrity",
-      "Data accessibility"
-    ]
-  },
-  {
-    question: "Which statements are true about Discretionary Access Control (DAC)?",
-    options: [
-      "Users can grant or revoke access to their data",
-      "Access control is strictly enforced by the system",
-      "Users have control over object permissions",
-      "Administrators define all access rules"
-    ],
-    answer: [
-      "Users can grant or revoke access to their data",
-      "Users have control over object permissions"
-    ]
-  },
-  {
-    question: "Which of the following are benefits of Role-Based Access Control (RBAC)?",
-    options: [
-      "Simplifies the management of user permissions",
-      "Allows easier implementation of the principle of least privilege",
-      "Provides granular control over access rights",
-      "Requires users to manage their own access permissions"
-    ],
-    answer: [
-      "Simplifies the management of user permissions",
-      "Allows easier implementation of the principle of least privilege",
-      "Provides granular control over access rights"
-    ]
-  },
-  {
-    question: "In Mandatory Access Control (MAC), what can typically be controlled by the system?",
-    options: [
-      "Data classification",
-      "User role assignment",
-      "User access to specific data",
-      "The number of users"
-    ],
-    answer: [
-      "Data classification",
-      "User access to specific data"
-    ]
-  },
-  {
-    question: "Which of the following are features of Oracle's security model?",
-    options: [
-      "Fine-grained access control",
-      "Transparent data encryption",
-      "Automatic backup creation",
-      "Row-level security"
-    ],
-    answer: [
-      "Fine-grained access control",
-      "Transparent data encryption",
-      "Row-level security"
-    ]
-  },
-
-  // --- WEEK 7: ASSIGNMENT 7 (Questions 1-15) ---
-  {
-    question: "Which of the following is used to implement access controls in a database?",
-    options: [
-      "User authentication",
-      "Data normalization",
-      "Backup procedures",
-      "Data encryption"
-    ],
-    answer: "User authentication"
-  },
-  {
-    question: "What is the purpose of encryption in database security?",
-    options: [
-      "To protect data during transmission",
-      "To speed up query execution",
-      "To back up data",
-      "To increase the database size"
-    ],
-    answer: "To protect data during transmission"
-  },
-  {
-    question: "Which of the following is an example of an auditing tool in a database?",
-    options: [
-      "Query optimizer",
-      "Access control list",
-      "Database logs",
-      "Backup utility"
-    ],
-    answer: "Database logs"
-  },
-  {
-    question: "Database integrity refers to:",
-    options: [
-      "Ensuring data is correct and consistent",
-      "Storing data in multiple locations",
-      "Keeping the database structure simple",
-      "Encrypting data for security"
-    ],
-    answer: "Ensuring data is correct and consistent"
-  },
-  {
-    question: "Confidentiality in database security is primarily concerned with:",
-    options: [
-      "Ensuring that only authorized users can access sensitive data",
-      "Ensuring the data is backed up regularly",
-      "Ensuring that all users can modify data",
-      "Ensuring quick data retrieval"
-    ],
-    answer: "Ensuring that only authorized users can access sensitive data"
-  },
-  {
-    question: "What is the primary function of Oracle in a database environment?",
-    options: [
-      "To manage user queries",
-      "To store large volumes of data",
-      "To provide a structured database management system",
-      "To create indexes for fast data retrieval"
-    ],
-    answer: "To provide a structured database management system"
-  },
-  {
-    question: "Which of the following is an advantage of stored procedures in Oracle?",
-    options: [
-      "Reduce network traffic by processing logic on the server side",
-      "Increase database size",
-      "Allow for easy data duplication",
-      "Simplify indexing"
-    ],
-    answer: "Reduce network traffic by processing logic on the server side"
-  },
-  {
-    question: "What does indexing in a database improve?",
-    options: [
-      "Query execution speed",
-      "Data encryption",
-      "Backup processes",
-      "Transaction isolation"
-    ],
-    answer: "Query execution speed"
-  },
-  {
-    question: "Triggers in Oracle are primarily used to:",
-    options: [
-      "Enforce business rules",
-      "Store large objects",
-      "Create database backups",
-      "Increase user permissions"
-    ],
-    answer: "Enforce business rules"
-  },
-  {
-    question: "Database optimization techniques are used to:",
-    options: [
-      "Speed up query execution and improve system performance",
-      "Increase database size",
-      "Protect sensitive data",
-      "Reduce server load"
-    ],
-    answer: "Speed up query execution and improve system performance"
-  },
-  {
-    question: "Which of the following are key techniques used to safeguard sensitive information in databases?",
-    options: [
-      "Access control",
-      "Data encryption",
-      "Data replication",
-      "Auditing"
-    ],
-    answer: [
-      "Access control",
-      "Data encryption",
-      "Auditing"
-    ]
-  },
-  {
-    question: "Which of the following help in ensuring the integrity of a database?",
-    options: [
-      "Constraints",
-      "Triggers",
-      "Indexing",
-      "Auditing"
-    ],
-    answer: [
-      "Constraints",
-      "Triggers"
-    ]
-  },
-  {
-    question: "Which of the following are features of Oracle Database Administration?",
-    options: [
-      "Managing user roles and permissions",
-      "Database backup and recovery",
-      "Query optimization",
-      "Data encryption"
-    ],
-    answer: [
-      "Managing user roles and permissions",
-      "Database backup and recovery",
-      "Data encryption"
-    ]
-  },
-  {
-    question: "Which of the following can be implemented using stored procedures?",
-    options: [
-      "Automating common tasks",
-      "Protecting sensitive data",
-      "Managing transaction logs",
-      "Enforcing business rules"
-    ],
-    answer: [
-      "Automating common tasks",
-      "Enforcing business rules"
-    ]
-  },
-  {
-    question: "Which of the following are examples of database optimization techniques?",
-    options: [
-      "Index creation",
-      "Query rewriting",
-      "Data encryption",
-      "Partitioning"
-    ],
-    answer: [
-      "Index creation",
-      "Query rewriting"
-    ]
-  },
-
-  // --- WEEK 8: ASSIGNMENT 8 (Questions 1-15) ---
-  {
-    question: "Which of the following is an essential task in database installation?",
-    options: [
-      "Creating users and assigning roles",
-      "Configuring the database server",
-      "Backup and recovery planning",
-      "All of the above"
-    ],
-    answer: "All of the above"
-  },
-  {
-    question: "The primary purpose of database backup and recovery is to:",
-    options: [
-      "Prevent unauthorized access",
-      "Ensure data integrity and availability",
-      "Increase query performance",
-      "Monitor user activities"
-    ],
-    answer: "Ensure data integrity and availability"
-  },
-  {
-    question: "What is a common routine maintenance task for a database administrator?",
-    options: [
-      "Optimizing queries",
-      "Backing up data",
-      "Updating the database software",
-      "All of the above"
-    ],
-    answer: "All of the above"
-  },
-  {
-    question: "Performance tuning in a database primarily aims to:",
-    options: [
-      "Improve user interface",
-      "Enhance query speed and resource usage",
-      "Increase database size",
-      "Ensure data consistency"
-    ],
-    answer: "Enhance query speed and resource usage"
-  },
-  {
-    question: "Database optimization in Oracle typically involves:",
-    options: [
-      "Adjusting indexes",
-      "Partitioning tables",
-      "Analyzing and rewriting SQL queries",
-      "All of the above"
-    ],
-    answer: "All of the above"
-  },
-  {
-    question: "Which of the following is NOT a technique for tuning Oracle databases?",
-    options: [
-      "Indexing",
-      "Query rewriting",
-      "Data partitioning",
-      "Data encryption"
-    ],
-    answer: "Data encryption"
-  },
-  {
-    question: "Data types in a relational database are used to define:",
-    options: [
-      "The size and type of data stored in a column",
-      "The relationships between tables",
-      "The access rights of users",
-      "The frequency of data access"
-    ],
-    answer: "The size and type of data stored in a column"
-  },
-  {
-    question: "Which of the following is a constraint in Oracle?",
-    options: [
-      "UNIQUE",
-      "FOREIGN KEY",
-      "CHECK",
-      "All of the above"
-    ],
-    answer: "All of the above"
-  },
-  {
-    question: "Constraints in Oracle help to:",
-    options: [
-      "Define data integrity rules",
-      "Optimize query performance",
-      "Manage user access",
-      "Encrypt sensitive data"
-    ],
-    answer: "Define data integrity rules"
-  },
-  {
-    question: "Which of the following is a valid query in Oracle to retrieve all records from a table named employees?",
-    options: [
-      "SELECT * FROM employees;",
-      "GET * FROM employees;",
-      "FETCH * FROM employees;",
-      "RETRIEVE * FROM employees;"
-    ],
-    answer: "SELECT * FROM employees;"
-  },
-  {
-    question: "Which of the following tasks are part of routine database maintenance?",
-    options: [
-      "Backup and recovery",
-      "Database tuning",
-      "Query optimization",
-      "Server security patches"
-    ],
-    answer: [
-      "Backup and recovery",
-      "Database tuning",
-      "Query optimization",
-      "Server security patches"
-    ]
-  },
-  {
-    question: "Performance tuning in Oracle involves which of the following?",
-    options: [
-      "Analyzing execution plans",
-      "Using indexes to speed up queries",
-      "Reducing the size of tables",
-      "Adjusting the database schema"
-    ],
-    answer: [
-      "Analyzing execution plans",
-      "Using indexes to speed up queries"
-    ]
-  },
-  {
-    question: "Which of the following are techniques for optimizing Oracle databases?",
-    options: [
-      "Using proper indexes",
-      "Rewriting inefficient queries",
-      "Optimizing hardware resources",
-      "Reducing the number of users"
-    ],
-    answer: [
-      "Using proper indexes",
-      "Rewriting inefficient queries",
-      "Optimizing hardware resources"
-    ]
-  },
-  {
-    question: "Data types in Oracle include:",
-    options: [
-      "VARCHAR2",
-      "NUMBER",
-      "DATE",
-      "ALL of the above"
-    ],
-    answer: "ALL of the above"
-  },
-  {
-    question: "Constraints in Oracle can help to enforce:",
-    options: [
-      "Primary key uniqueness",
-      "Foreign key relationships",
-      "Range checks",
-      "Query optimization"
-    ],
-    answer: [
-      "Primary key uniqueness",
-      "Foreign key relationships",
-      "Range checks"
-    ]
-  },
-
-  // --- WEEK 9: ASSIGNMENT 9 (Questions 1-15) ---
-  {
-    question: "A subquery is a query that:",
-    options: [
-      "Runs before the main query",
-      "Runs after the main query",
-      "Is executed as part of the main query",
-      "Cannot be used in SELECT statements"
-    ],
-    answer: "Is executed as part of the main query"
-  },
-  {
-    question: "Correlated subqueries differ from regular subqueries in that:",
-    options: [
-      "They depend on the outer query",
-      "They are independent of the outer query",
-      "They can only be used in UPDATE statements",
-      "They are faster than regular subqueries"
-    ],
-    answer: "They depend on the outer query"
-  },
-  {
-    question: "Which set operator combines the result sets of two queries, removing duplicates?",
-    options: [
-      "UNION",
-      "INTERSECT",
-      "MINUS",
-      "JOIN"
-    ],
-    answer: "UNION"
-  },
-  {
-    question: "The INTERSECT operator returns:",
-    options: [
-      "All rows that are in both queries",
-      "All rows that are in either of the queries",
-      "Rows that are only in the first query",
-      "Rows that are only in the second query"
-    ],
-    answer: "All rows that are in both queries"
-  },
-  {
-    question: "Which of the following SQL functions can be used to calculate the total number of rows in a dataset?",
-    options: [
-      "AVG",
-      "SUM",
-      "COUNT",
-      "MAX"
-    ],
-    answer: "COUNT"
-  },
-  {
-    question: "The SUM function is typically used to:",
-    options: [
-      "Find the average of a set of numbers",
-      "Find the total of a set of numbers",
-      "Count the number of records",
-      "Find the highest value in a set of numbers"
-    ],
-    answer: "Find the total of a set of numbers"
-  },
-  {
-    question: "Which of the following are examples of database security measures?",
-    options: [
-      "Encryption",
-      "User authentication",
-      "Data access control",
-      "All of the above"
-    ],
-    answer: "All of the above"
-  },
-  {
-    question: "Database security primarily involves:",
-    options: [
-      "Protecting the data from unauthorized access",
-      "Optimizing query performance",
-      "Ensuring data is always backed up",
-      "Increasing database size"
-    ],
-    answer: "Protecting the data from unauthorized access"
-  },
-  {
-    question: "Which of the following statements can be used to create a user in Oracle?",
-    options: [
-      "CREATE USER",
-      "CREATE ACCOUNT",
-      "ADD USER",
-      "USER CREATE"
-    ],
-    answer: "CREATE USER"
-  },
-  {
-    question: "A role in Oracle is used to:",
-    options: [
-      "Define access rights for database users",
-      "Store backup information",
-      "Encrypt data",
-      "Automatically optimize queries"
-    ],
-    answer: "Define access rights for database users"
-  },
-  {
-    question: "Which of the following are benefits of using subqueries?",
-    options: [
-      "Simplifies complex queries",
-      "Allows for conditional logic in queries",
-      "Can reduce the number of queries needed",
-      "Cannot be used with aggregate functions"
-    ],
-    answer: [
-      "Simplifies complex queries",
-      "Allows for conditional logic in queries",
-      "Can reduce the number of queries needed"
-    ]
-  },
-  {
-    question: "Set operators in SQL can be used to:",
-    options: [
-      "Combine the results of multiple queries",
-      "Calculate the total number of records",
-      "Find the common rows between two queries",
-      "Join tables based on common columns"
-    ],
-    answer: [
-      "Combine the results of multiple queries",
-      "Find the common rows between two queries"
-    ]
-  },
-  {
-    question: "Which SQL functions can be used for data aggregation?",
-    options: [
-      "AVG",
-      "SUM",
-      "COUNT",
-      "SELECT"
-    ],
-    answer: [
-      "AVG",
-      "SUM",
-      "COUNT"
-    ]
-  },
-  {
-    question: "Database security measures include:",
-    options: [
-      "Authentication",
-      "Authorization",
-      "Data backup",
-      "Data compression"
-    ],
-    answer: [
-      "Authentication",
-      "Authorization"
-    ]
-  },
-  {
-    question: "Managing users and roles in Oracle involves:",
-    options: [
-      "Creating and managing user accounts",
-      "Assigning roles to users",
-      "Controlling user access to data",
-      "Optimizing queries for user accounts"
-    ],
-    answer: [
-      "Creating and managing user accounts",
-      "Assigning roles to users",
-      "Controlling user access to data"
-    ]
-  },
-
-  // --- WEEK 10: ASSIGNMENT 10 (Questions 1-15) ---
-  {
-    question: "Privileges in Oracle databases are used to:",
-    options: [
-      "Control access to database objects",
-      "Create backup copies",
-      "Optimize query performance",
-      "Change the structure of database tables"
-    ],
-    answer: "Control access to database objects"
-  },
-  {
-    question: "Which of the following is an example of access control in a database?",
-    options: [
-      "Granting or revoking user privileges",
-      "Creating indexes for faster search",
-      "Storing sensitive data in encrypted format",
-      "Analyzing query execution plans"
-    ],
-    answer: "Granting or revoking user privileges"
-  },
-  {
-    question: "Indexes in databases are primarily used to:",
-    options: [
-      "Improve data integrity",
-      "Speed up data retrieval operations",
-      "Store backup copies of data",
-      "Manage user roles and privileges"
-    ],
-    answer: "Speed up data retrieval operations"
-  },
-  {
-    question: "Which of the following statements is true about indexes?",
-    options: [
-      "Indexes can slow down data modification operations",
-      "Indexes only work on text-based data",
-      "Indexes are used to normalize data",
-      "Indexes are used to reduce storage requirements"
-    ],
-    answer: "Indexes can slow down data modification operations"
-  },
-  {
-    question: "In Oracle, an index can be created using the command:",
-    options: [
-      "CREATE INDEX",
-      "INDEX CREATE",
-      "CREATE INDEX TABLE",
-      "NEW INDEX"
-    ],
-    answer: "CREATE INDEX"
-  },
-  {
-    question: "Views in SQL are used to:",
-    options: [
-      "Display data from one or more tables",
-      "Modify data directly in tables",
-      "Store data in a more efficient format",
-      "Increase the size of the database"
-    ],
-    answer: "Display data from one or more tables"
-  },
-  {
-    question: "The ACID properties in database transactions stand for:",
-    options: [
-      "Atomicity, Consistency, Isolation, Durability",
-      "Allocation, Consistency, Integrity, Durability",
-      "Authorization, Consistency, Integrity, Durability",
-      "Atomicity, Consistency, Isolation, Distribution"
-    ],
-    answer: "Atomicity, Consistency, Isolation, Durability"
-  },
-  {
-    question: "Which ACID property ensures that once a transaction is committed, it cannot be undone?",
-    options: [
-      "Atomicity",
-      "Consistency",
-      "Isolation",
-      "Durability"
-    ],
-    answer: "Durability"
-  },
-  {
-    question: "The Transaction Management system in databases is responsible for:",
-    options: [
-      "Ensuring all transactions are executed in isolation",
-      "Keeping track of transactions and ensuring ACID properties",
-      "Granting access privileges to users",
-      "Encrypting sensitive data"
-    ],
-    answer: "Keeping track of transactions and ensuring ACID properties"
-  },
-  {
-    question: "The Isolation property of ACID ensures:",
-    options: [
-      "Transactions are independent of one another",
-      "All data is consistent",
-      "Only committed transactions are visible to other transactions",
-      "The database remains intact after system failures"
-    ],
-    answer: "Transactions are independent of one another"
-  },
-  {
-    question: "Privileges can be granted on:",
-    options: [
-      "Tables",
-      "Views",
-      "Indexes",
-      "Users"
-    ],
-    answer: [
-      "Tables",
-      "Views",
-      "Indexes"
-    ]
-  },
-  {
-    question: "The importance of indexes includes:",
-    options: [
-      "Speeding up data retrieval",
-      "Reducing the size of the database",
-      "Improving data integrity",
-      "Enabling faster joins"
-    ],
-    answer: [
-      "Speeding up data retrieval",
-      "Enabling faster joins"
-    ]
-  },
-  {
-    question: "Views in SQL provide:",
-    options: [
-      "Data abstraction",
-      "A mechanism to secure sensitive data",
-      "A way to simplify complex queries",
-      "A method for modifying the structure of tables"
-    ],
-    answer: [
-      "Data abstraction",
-      "A mechanism to secure sensitive data",
-      "A way to simplify complex queries"
-    ]
-  },
-  {
-    question: "ACID properties in database transactions ensure:",
-    options: [
-      "Transactions are processed in the correct order",
-      "Data is consistent and not corrupted",
-      "Transactions are isolated from each other",
-      "Completed transactions are permanently stored"
-    ],
-    answer: [
-      "Transactions are processed in the correct order",
-      "Data is consistent and not corrupted",
-      "Transactions are isolated from each other"
-    ]
-  },
-  {
-    question: "Transaction Management includes:",
-    options: [
-      "Ensuring the ACID properties are met",
-      "Managing the commit and rollback operations",
-      "Allocating memory for database operations",
-      "Securing user data"
-    ],
-    answer: [
-      "Ensuring the ACID properties are met",
-      "Managing the commit and rollback operations"
-    ]
-  },
-
-  // --- WEEK 11: ASSIGNMENT 11 (Questions 1-15) ---
-  {
-    question: "Common challenges in database management include:",
-    options: [
-      "Data redundancy",
-      "Slow query performance",
-      "Data integrity violations",
-      "All of the above"
-    ],
-    answer: "All of the above"
-  },
-  {
-    question: "JOINs in SQL are used to:",
-    options: [
-      "Combine rows from two or more tables based on a related column",
-      "Create a new database",
-      "Delete rows from a table",
-      "Group rows based on aggregate functions"
-    ],
-    answer: "Combine rows from two or more tables based on a related column"
-  },
-  {
-    question: "The GROUP BY clause in SQL is used to:",
-    options: [
-      "Group rows based on aggregate functions",
-      "Sort the result set in ascending order",
-      "Filter rows based on a condition",
-      "Select rows from a table"
-    ],
-    answer: "Group rows based on aggregate functions"
-  },
-  {
-    question: "A performance bottleneck in a database can occur due to:",
-    options: [
-      "High CPU usage",
-      "Poor indexing strategy",
-      "Inefficient queries",
-      "All of the above"
-    ],
-    answer: "All of the above"
-  },
-  {
-    question: "The NOT NULL constraint ensures that:",
-    options: [
-      "A column cannot have a NULL value",
-      "A column must have a default value",
-      "Data is normalized",
-      "A column must be indexed"
-    ],
-    answer: "A column cannot have a NULL value"
-  },
-  {
-    question: "The PRIMARY KEY constraint ensures that:",
-    options: [
-      "A column has unique values",
-      "A column cannot contain NULL values",
-      "Both of the above",
-      "Data in the column is always encrypted"
-    ],
-    answer: "Both of the above"
-  },
-  {
-    question: "The FOREIGN KEY constraint is used to:",
-    options: [
-      "Ensure that values in one table match values in another table",
-      "Create a unique index on a column",
-      "Make a column mandatory",
-      "Speed up query execution"
-    ],
-    answer: "Ensure that values in one table match values in another table"
-  },
-  {
-    question: "Real-world database applications often require:",
-    options: [
-      "High availability",
-      "Scalability",
       "Security",
-      "All of the above"
+      "Anonymity",
+      "Confidentiality",
+      "Secrecy"
     ],
-    answer: "All of the above"
+    answer: "Secrecy"
   },
   {
-    question: "In advanced SQL queries, the use of JOINs helps to:",
+    question: "British law embraces privacy as _________.",
     options: [
-      "Retrieve data from multiple tables",
-      "Limit data retrieval to specific rows",
-      "Perform aggregation operations",
-      "Sort data based on conditions"
+      "Security",
+      "Anonymity",
+      "Confidentiality",
+      "Secrecy"
     ],
-    answer: "Retrieve data from multiple tables"
+    answer: "Confidentiality"
   },
   {
-    question: "To improve database performance, one must focus on:",
+    question: "Which of the statements about pseudonymization is true?",
     options: [
-      "Optimizing queries",
-      "Proper indexing",
-      "Analyzing execution plans",
-      "All of the above"
+      "Pseudonymization is a technique proposed by frameworks like Privacy by Design offering practical substitutes for using the raw data, especially when this data is sensitive",
+      "Various pseudonymization techniques enable you to preserve format or understand the original intention for that data",
+      "Pseudonymization methods often maintain the capability to establish connections between data, which proves beneficial when linking datasets using personal identifiers or other sensitive columns",
+      "All the above"
     ],
-    answer: "All of the above"
+    answer: "All the above"
   },
   {
-    question: "SQL JOINs can be classified into:",
+    question: "Differential privacy is:",
     options: [
-      "INNER JOIN",
-      "LEFT JOIN",
-      "RIGHT JOIN",
-      "OUTER JOIN"
+      "A method of probabilistically limiting the amount of information an attacker can gain when data is released",
+      "A method for measuring and monitoring the loss of privacy experienced by an individual in a dataset that has been released",
+      "One of the most effective methods for providing individuals in a dataset with plausible deniability while still performing data analysis",
+      "All the above"
+    ],
+    answer: "All the above"
+  },
+  {
+    question: "Which of the following statement is not true about k-anonymity?",
+    options: [
+      "k-anonymity is an intuitive and widely used method for modifying data for privacy protection",
+      "For k-anonymity to be achieved, there need to be at least k+1 individuals in the dataset who share the set of attributes that might become identifying for each individual",
+      "Generalization is a method for achieving K-Anonymity",
+      "k-anonymity can be provided by using suppression techniques"
+    ],
+    answer: "For k-anonymity to be achieved, there need to be at least k+1 individuals in the dataset who share the set of attributes that might become identifying for each individual"
+  },
+  {
+    question: "Which of the following statements is/are correct? (Select all that apply)",
+    options: [
+      "Privacy-preserving data mining enables the extraction of insights from datasets while ensuring that the identities of data subjects or confidential information remain undisclosed",
+      "Randomization, anonymyzation and encryption are methods of privacy-preserving data mining.",
+      "The goal of privacy-preserving data mining is to develop data mining methods without increasing the risk of misuse of the data",
+      "Privacy-preserving data mining remove irrelevant data before mining"
     ],
     answer: [
-      "INNER JOIN",
-      "LEFT JOIN",
-      "RIGHT JOIN",
-      "OUTER JOIN"
-    ]
-  },
-  {
-    question: "GROUP BY is typically used with:",
-    options: [
-      "COUNT()",
-      "SUM()",
-      "AVG()",
-      "MAX()"
-    ],
-    answer: [
-      "COUNT()",
-      "SUM()",
-      "AVG()",
-      "MAX()"
-    ]
-  },
-  {
-    question: "Constraints in SQL include:",
-    options: [
-      "NOT NULL",
-      "UNIQUE",
-      "PRIMARY KEY",
-      "FOREIGN KEY"
-    ],
-    answer: [
-      "NOT NULL",
-      "UNIQUE",
-      "PRIMARY KEY",
-      "FOREIGN KEY"
-    ]
-  },
-  {
-    question: "Identifying performance bottlenecks in a database can involve:",
-    options: [
-      "Monitoring query performance",
-      "Reviewing database schema",
-      "Optimizing indexes",
-      "Writing better JOIN queries"
-    ],
-    answer: [
-      "Monitoring query performance",
-      "Reviewing database schema",
-      "Optimizing indexes",
-      "Writing better JOIN queries"
-    ]
-  },
-  {
-    question: "Real-world database applications often face challenges in:",
-    options: [
-      "Data consistency",
-      "High traffic volume",
-      "Data redundancy",
-      "Complex query optimization"
-    ],
-    answer: [
-      "Data consistency",
-      "High traffic volume",
-      "Data redundancy",
-      "Complex query optimization"
+      "Privacy-preserving data mining enables the extraction of insights from datasets while ensuring that the identities of data subjects or confidential information remain undisclosed",
+      "Randomization, anonymyzation and encryption are methods of privacy-preserving data mining.",
+      "The goal of privacy-preserving data mining is to develop data mining methods without increasing the risk of misuse of the data"
     ]
   },
 
-  // --- WEEK 12: ASSIGNMENT 12 (Questions 1-15) ---
+  // --- Week 11: Assignment 11 (10 Questions) ---
   {
-    question: "In a University Record Management System, which SQL command is commonly used to create a new table?",
+    question: "Within how many hours does GDPR require organizations to report cyber incidents?",
     options: [
-      "INSERT",
-      "SELECT",
-      "CREATE",
-      "UPDATE"
+      "48 hours",
+      "There is no such requirement",
+      "72 hours",
+      "96 hours"
     ],
-    answer: "CREATE"
+    answer: "72 hours"
   },
   {
-    question: "In a University Record Management System, which SQL command would you use to update a student's grade in a specific course?",
+    question: "True or False: Privacy is a fundamental right in India.",
     options: [
-      "ALTER",
-      "MODIFY",
-      "UPDATE",
-      "REPLACE"
+      "True",
+      "False"
     ],
-    answer: "UPDATE"
+    answer: "True"
   },
   {
-    question: "In a Client Information System using SQL Server, which SQL statement would you use to retrieve the names of clients who have made purchases within the last month?",
+    question: "Which legal basis for processing personal data applies when someone's life is in danger, and the processing is necessary to save it?",
     options: [
-      "SELECT DISTINCT",
-      "SELECT TOP",
-      "SELECT WHERE",
-      "SELECT JOIN"
+      "Consent",
+      "Public interest",
+      "Contract",
+      "Vital interests"
     ],
-    answer: "SELECT WHERE"
+    answer: "Vital interests"
   },
   {
-    question: "In a Client Information System using SQL Server, which SQL statement would you use to delete all clients who have not made any purchases in the last year?",
+    question: "GDPR applies to which of the following organizations?",
     options: [
-      "DELETE FROM",
-      "DROP TABLE",
-      "TRUNCATE TABLE",
-      "DELETE WHERE"
+      "Only organizations located in EU",
+      "Any organization, regardless of location, that processes the personal data of individuals in EU",
+      "Only government bodies in EU",
+      "Organizations processing only anonymous data"
     ],
-    answer: "DELETE FROM"
+    answer: "Any organization, regardless of location, that processes the personal data of individuals in EU"
   },
   {
-    question: "Which of the following tables are commonly found in a University Record Management System?",
+    question: "Which of the following is/are guiding principles of the GDPR: (Select all that apply)",
     options: [
-      "Student",
-      "Course",
-      "Instructor",
-      "Department"
+      "Lawfulness, fairness, and transparency",
+      "Purpose limitation",
+      "Data minimization",
+      "Data speculation"
     ],
     answer: [
-      "Student",
-      "Course",
-      "Instructor",
-      "Department"
+      "Lawfulness, fairness, and transparency",
+      "Purpose limitation",
+      "Data minimization"
     ]
   },
   {
-    question: "Which of the following statements accurately describes the role of foreign keys in a University Record Management System database?",
+    question: "Which of the following is not a valid legal basis for processing personal data under GDPR?",
     options: [
-      "Foreign keys ensure referential integrity by enforcing relationships between tables",
-      "Foreign keys allow for efficient querying and retrieval of data",
-      "Foreign keys restrict the deletion of records in a parent table if corresponding records exist in a child table",
-      "Foreign keys facilitate the creation of virtual views for reporting purposes"
+      "Consent of the data subject",
+      "Fulfillment of a contract",
+      "Public interest",
+      "Profit maximization"
     ],
-    answer: [
-      "Foreign keys ensure referential integrity by enforcing relationships between tables",
-      "Foreign keys restrict the deletion of records in a parent table if corresponding records exist in a child table"
-    ]
+    answer: "Profit maximization"
   },
   {
-    question: "What are the advantages of stored procedures in a Client Information System database?",
+    question: "True or False: GDPR doesn't mandate the exact security measures organizations must take.",
     options: [
-      "Improved performance due to precompiled execution plans",
-      "Enhanced security by encapsulating complex logic",
-      "Simplified maintenance by centralizing business logic",
-      "It is compatible with all SQL Server editions",
-      "Ability to execute multiple queries simultaneously"
+      "True",
+      "False"
     ],
-    answer: [
-      "Improved performance due to precompiled execution plans",
-      "Enhanced security by encapsulating complex logic",
-      "Simplified maintenance by centralizing business logic"
-    ]
+    answer: "True"
   },
   {
-    question: "Which statements regarding transactions in a Client Information System database are true?",
+    question: "Which of the following best describes the concept of data localization in India?",
     options: [
-      "Transactions ensure data integrity by grouping multiple SQL statements into a single unit of work",
-      "BEGIN TRANSACTION and COMMIT statements can explicitly start and commit transactions",
-      "Transactions can be automatically rolled back if an error occurs during their execution",
-      "Transactions can span multiple SQL Server instances",
-      "Transactions are always automatically committed after each SQL statement execution"
+      "Permanent deletion of all sensitive data",
+      "Mandatory storage and processing of certain data within the country’s borders",
+      "Making data available to all global users",
+      "Storing data only on cloud servers outside India"
     ],
-    answer: [
-      "Transactions ensure data integrity by grouping multiple SQL statements into a single unit of work",
-      "BEGIN TRANSACTION and COMMIT statements can explicitly start and commit transactions",
-      "Transactions can be automatically rolled back if an error occurs during their execution"
-    ]
+    answer: "Mandatory storage and processing of certain data within the country’s borders"
   },
   {
-    question: "The SQL command used to insert data into a University Record Management System table is:",
-    options: [],
-    answer: "INSERT"
-  },
-  {
-    question: "In a University Record Management System database, a query to retrieve the list of students who have enrolled in a specific course and received a grade above 90% might include using the statement:",
-    options: [],
-    answer: "SELECT"
-  },
-  {
-    question: "The SQL command used to update the email address of a specific client in the Clients table is:",
-    options: [],
-    answer: "UPDATE"
-  },
-  {
-    question: "What is the main function of database encryption in cybersecurity?",
+    question: "Under GDPR, which of the following is a key responsibility of the Data Protection Officer (DPO)?",
     options: [
-      "Data protection",
-      "Performance slowdown",
-      "Query blocking",
-      "Compliance removal"
+      "Designing the firm’s IT infrastructure",
+      "Advising on and monitoring firm’s compliance with data protection laws",
+      "Managing all financial transactions",
+      "Hiring and firing employees"
     ],
-    answer: "Data protection"
+    answer: "Advising on and monitoring firm’s compliance with data protection laws"
   },
   {
-    question: "What role do stored procedures play in a Client Information System using SQL Server?",
+    question: "In the context of Aadhaar data, who would be considered the Data Principal?",
     options: [
-      "They are used to create new tables in the database",
-      "They encapsulate complex business logic and improve performance",
-      "They enforce data integrity constraints",
-      "They provide simplified access to specific subsets of data"
+      "The Unique Identification Authority of India (UIDAI)",
+      "The individual to whom the Aadhaar number and related data belong",
+      "The service providers using Aadhaar authentication",
+      "The government agency processing the data"
     ],
-    answer: "They encapsulate complex business logic and improve performance"
+    answer: "The individual to whom the Aadhaar number and related data belong"
+  },
+
+  // --- Week 12: Assignment 12 (10 Questions) ---
+  {
+    question: "What does Prospect Theory suggest about how people perceive gains and losses?",
+    options: [
+      "People value all gains and losses equally",
+      "Individuals are more likely to take risks for potential gains",
+      "Losses are typically felt more intensely than gains",
+      "People only care about maximizing their financial gains"
+    ],
+    answer: "Losses are typically felt more intensely than gains"
   },
   {
-    question: "What is the primary purpose of views in a Client Information System database?",
+    question: "An employee believes that the personal data on their device is more valuable than others perceive, simply because it belongs to them. This is an example of which cognitive bias?",
     options: [
-      "To automate tasks or enforce business rules based on certain events",
-      "To provide simplified access to specific subsets of data",
-      "To retrieve client information based on various criteria",
-      "To enforce data integrity constraints"
+      "Anchoring Bias",
+      "Endowment Effect",
+      "Confirmation Bias",
+      "Availability Heuristic"
     ],
-    answer: "To provide simplified access to specific subsets of data"
+    answer: "Endowment Effect"
   },
   {
-    question: "Which security measure is commonly implemented to protect sensitive client information in a Client Information System?",
+    question: "Which design approach is best recommended to address privacy concerns with digital contact tracing applications?",
     options: [
-      "Role-based access control",
-      "Encapsulation",
-      "Foreign key constraints",
-      "Triggers"
+      "Implement a centralized architecture where all contact tracing data is stored and processed by a single authority",
+      "Develop a decentralized, privacy-preserving architecture that minimizes the sharing of personal data",
+      "Prioritize public health benefits over individual privacy protections in the design of contact tracing systems",
+      "Require mandatory participation in contact tracing programs to maximize the effectiveness of the technology"
     ],
-    answer: "Role-based access control"
+    answer: "Develop a decentralized, privacy-preserving architecture that minimizes the sharing of personal data"
+  },
+  {
+    question: "Which of the following is an example of the privacy paradox by an action of a user?",
+    options: [
+      "Reads a website's privacy policy in detail before signing up",
+      "Chooses to pay for a service to avoid targeted ads",
+      "Expresses concern about data collection but uses free social media services",
+      "Deletes their old accounts to protect their personal information"
+    ],
+    answer: "Expresses concern about data collection but uses free social media services"
+  },
+  {
+    question: "In the typical case of privacy valuation, the relationship between Willingness-to-Accept (WTA) and Willingness-to-Pay (WTP) is:",
+    options: [
+      "WTA < WTP",
+      "WTA = WTP",
+      "WTA > WTP",
+      "No relationship between WTA and WTP"
+    ],
+    answer: "WTA > WTP"
+  },
+  {
+    question: "Which of the following is true about privacy valuation?",
+    options: [
+      "Privacy valuation is consistent across all individuals and contexts",
+      "Privacy valuation is influenced by external factors and remains stable over time",
+      "Privacy valuation has variability and is context driven",
+      "Privacy valuation is solely determined by economic factors and market trends"
+    ],
+    answer: "Privacy valuation has variability and is context driven"
+  },
+  {
+    question: "What is the core idea behind the privacy calculus?",
+    options: [
+      "Individuals make irrational decisions about sharing personal information",
+      "Individuals engage in a cost-benefit analysis to decide whether to disclose personal data",
+      "Individuals do not have any control over the disclosure of their personal information",
+      "Individuals are solely motivated by the potential benefits of data sharing"
+    ],
+    answer: "Individuals engage in a cost-benefit analysis to decide whether to disclose personal data"
+  },
+  {
+    question: "Why is understanding the value that individuals assign to the protection of their personal data important for businesses?",
+    options: [
+      "To enable businesses to use personal data for maximum commercial gain",
+      "To help businesses develop privacy-enhancing initiatives that can provide a competitive advantage",
+      "To allow businesses to mandate strict data collection and usage policies without considering consumer preferences",
+      "To facilitate the creation of personal data trading markets where individuals can monetize their information"
+    ],
+    answer: "To help businesses develop privacy-enhancing initiatives that can provide a competitive advantage"
+  },
+  {
+    question: "A father took photos of his sick toddler to share with a doctor. An automated system flagged the images as child abuse material and flagged the father as a criminal. This incident highlights which key concern in information privacy?",
+    options: [
+      "Accuracy and fairness in automated systems",
+      "Data minimization",
+      "Right to be forgotten",
+      "Encryption of personal data"
+    ],
+    answer: "Accuracy and fairness in automated systems"
+  },
+  {
+    question: "During online checkout, a retailer asks customers for shipping addresses and contact details to deliver orders. However, it also requests marital status and income, which are not relevant. This violates which privacy principle?",
+    options: [
+      "Data Portability",
+      "Data Minimization",
+      "Purpose Limitation",
+      "Transparency Requirement"
+    ],
+    answer: "Data Minimization"
   }
 ];
-// This completes the array with all 180 questions from Week 4 through Week 12.
