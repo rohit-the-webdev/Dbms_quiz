@@ -159,3 +159,45 @@ h1 {
     border-color: #ffcdd2; /* Light red border */
     background-color: #fff0f0; /* Very light red background */
 }
+ /* ADD THESE MODAL STYLES TO YOUR style.css (recommended) or keep them here */
+    #name-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        /* Ensure it starts hidden */
+        display: none; 
+    }
+    #name-input-box, #prank-popup {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        width: 80%;
+        max-width: 400px;
+    }
+    #name-input {
+        padding: 10px;
+        margin: 15px 0;
+        width: 90%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    .btn {
+        /* Assuming 'btn' style is defined in style.css */
+        cursor: pointer;
+    }
+    #prank-popup {
+        /* Special style for the prank message */
+        background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%);
+        color: #333;
+        border: 4px solid #f66;
+    }
