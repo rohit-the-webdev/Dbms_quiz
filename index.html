@@ -5,12 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DBMS Quiz</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ADD THESE MODAL STYLES TO YOUR style.css (recommended) or keep them here */
+    #name-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        display: none; 
+    }
+    #name-input-box, #prank-popup {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        width: 80%;
+        max-width: 400px;
+    }
+    #name-input {
+        padding: 10px;
+        margin: 15px 0;
+        width: 90%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    .btn {
+        cursor: pointer;
+    }
+    #prank-popup {
+        background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%);
+        color: #333;
+        border: 4px solid #f66;
+    }
+
+    /* NEW: Top Right Restart Button Style */
+    #top-restart-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 8px 12px;
+        font-size: 0.8em;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* NEW: Loading Spinner Styles */
+    .spinner {
+        display: none;
+        width: 20px;
+        height: 20px;
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #3498db;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
+  
+  <button id="top-restart-btn" class="btn" style="display:none;">Restart Quiz</button>
+  
+  <div id="name-modal-overlay">
+    
+    <div id="name-input-box">
+      <h2>👋 Welcome!</h2>
+      <p>Please enter your name to start the quiz:</p>
+      <input type="text" id="name-input" placeholder="Your Name" />
+      <button id="name-submit-btn" class="btn">Start Quiz</button>
+    </div>
+
+    <div id="prank-popup" style="display: none;">
+      <h2 id="prank-message"></h2>
+    </div>
+
+  </div>
   <div class="container">
     <h1>📘 DBMS Quiz</h1>
     <div id="quiz-box">
-      <h2 id="question-text">Loading question...</h2>
+      <h2 id="question-text">Loading question... <span id="loading-spinner" class="spinner"></span></h2>
       <div id="options"></div> 
       <p id="result"></p>
       <button id="next-btn" class="btn" style="display:none;">Next Question</button> 
