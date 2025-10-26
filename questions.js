@@ -1,1245 +1,1228 @@
 const questions = [
-  // --- Week 1: Assignment 1 (10 Questions) ---
+  // --- Week 1: Networking & Ethical Hacking (10 Questions) ---
   {
-    question: "How do spear-phishing attacks differ from general phishing attacks?",
+    question: "What is the main objective of ethical hacking?",
     options: [
-      "They use only phone calls as a medium",
-      "They are randomly sent to thousands of people",
-      "They target specific individuals with personalized messages",
-      "They do not involve malware at all"
+      "Deletes files from a system.",
+      "Inserts malwares in a system.",
+      "Legally Identify system vulnerabilities.",
+      "Steal sensitive information."
     ],
-    answer: "They target specific individuals with personalized messages"
+    answer: "Legally Identify system vulnerabilities."
   },
   {
-    question: "What does ransomware typically do to a victim's files?",
+    question: "Which of the following are types of penetration testing methodologies?",
     options: [
-      "Deletes them permanently",
-      "Encrypts them to prevent access",
-      "Transfers them to another device",
-      "Makes them publicly available online"
+      "White Box",
+      "Black Box",
+      "Red Box",
+      "Trojan Horse"
     ],
-    answer: "Encrypts them to prevent access"
+    answer: ["White Box", "Black Box"]
   },
   {
-    question: "Which of the following are examples of systems protected under Critical Infrastructure Protection (CIP)?",
+    question: "Which of the following switching techniques is more efficient for bursty data traffic?",
     options: [
-      "Gaming consoles and home Wi-Fi routers",
-      "SCADA systems, Industrial Control Systems (ICS), and operational technology",
-      "Social media networks and entertainment apps",
-      "Educational platforms and student databases"
+      "Circuit Switching",
+      "Message Switching",
+      "Packet Switching",
+      "None of these"
     ],
-    answer: "SCADA systems, Industrial Control Systems (ICS), and operational technology"
+    answer: "Packet Switching"
   },
   {
-    question: "_________ is the protection of information assets that use, store, or transmit information through the application of policy, education, and technology.",
+    question: "Which protocol in TCP/IP is connectionless and does not provide reliability?",
     options: [
-      "Network Security",
-      "Operations Security",
-      "Communications Security",
-      "Information Security"
+      "TCP",
+      "UDP",
+      "FTP",
+      "TELNET"
     ],
-    answer: "Information Security"
+    answer: "UDP"
   },
   {
-    question: "_________ is the property of information that describes how data is whole, complete, and uncorrupted.",
+    question: "Which IP header field prevents infinite looping of packets?",
     options: [
-      "Integrity",
-      "Availability",
-      "Confidentiality",
-      "Accuracy"
+      "Header Checksum",
+      "Time to Live",
+      "Fragment offset",
+      "HLEN"
     ],
-    answer: "Integrity"
+    answer: "Time to Live"
   },
   {
-    question: "To protect the confidentiality of information, which of the following measures can be taken:",
+    question: "What are the responsibilities of the IP layer?",
     options: [
-      "Information classification",
-      "Secure document storage",
-      "Application of general security policies",
-      "All the above"
+      "Framing",
+      "Route packets",
+      "Provide reliable transmission",
+      "None of these"
     ],
-    answer: "All the above"
+    answer: "Route packets"
   },
   {
-    question: "In the context of cybersecurity, how can technology act as a source of threat?",
+    question: "Which of the following is/are not a valid field of IP header?",
     options: [
-      "It includes tools that can attack other networks",
-      "It increases internet traffic for organizations",
-      "It automates routine business operations",
-      "Through software that prevents users from sharing information"
+      "TTL",
+      "Port Number",
+      "Protocols",
+      "MAC address"
     ],
-    answer: "It includes tools that can attack other networks"
+    answer: ["Port Number", "MAC address"]
   },
   {
-    question: "True or False: Information Security is not a process, but a product or a technology.",
+    question: "Which of the following statements is/are true about datagram packet switching?",
     options: [
-      "True",
-      "False"
+      "Requires prior route establishment.",
+      "Faster for fewer packet.",
+      "Uses dynamic routing.",
+      "All packets follow the same path."
     ],
-    answer: "False"
+    answer: ["Faster for fewer packet.", "Uses dynamic routing."]
   },
   {
-    question: "_________ is a manipulation technique that exploits human error to gain private information, access, or valuables.",
-    options: [
-      "Session Hijacking",
-      "Salting",
-      "Social Engineering",
-      "Smurf Attack"
-    ],
-    answer: "Social Engineering"
+    question: "The max value (in decimal) for HLEN field (header length) is ?",
+    options: [],
+    answer: "15"
   },
   {
-    question: "Which of the following scenarios represents a breach involving protected health information (PHI)?",
-    options: [
-      "Sharing a patient's prescription history along with their name",
-      "Forwarding anonymous health statistics to a research team",
-      "Posting a hospital's general policy on patient intake",
-      "Transmitting appointment schedules without personal details"
-    ],
-    answer: "Sharing a patient's prescription history along with their name"
+    question: "The header checksum field in the IP header is ___ bits wide.",
+    options: [],
+    answer: "16"
   },
 
-  // --- Week 2: Assignment 2 (10 Questions) ---
+  // --- Week 2: IP Fragmentation, TCP/UDP, and Addressing (10 Questions) ---
   {
-    question: "What is the primary purpose of the McCumber Cube?",
+    question: "Why do we need fragmentation?",
     options: [
-      "To develop network security protocols",
-      "To create operating systems",
-      "To establish and evaluate information security programs",
-      "To analyze network traffic performance"
+      "To increase transmission speed.",
+      "Due to varying MTU across networks.",
+      "To improve encryption.",
+      "To compress packet."
     ],
-    answer: "To establish and evaluate information security programs"
+    answer: "Due to varying MTU across networks."
   },
   {
-    question: "Consider the following statements\na. The first dimension of the McCumber cube identifies the goals to protect the cyber world.\nb. The second dimension of the McCumber cube focuses on the problems of protecting all of the states of data in the cyber world.\nc. The third dimension of the McCumber cube defines the types of controls used to protect the cyber world.\nWhich of the above statements are True?",
+    question: "IP fragmentation is typically done by:",
     options: [
-      "Only a is true",
-      "a and b are true",
-      "b and c are true",
-      "a,b,and c are true"
+      "Source Host",
+      "Destination Host",
+      "Intermediate Routers",
+      "Hubs"
     ],
-    answer: "a,b,and c are true"
+    answer: "Intermediate Routers"
   },
   {
-    question: "In a malware detection system, when legitimate business software is incorrectly identified as malicious, this represents:",
+    question: "For reassembling the fragmented packets at the final destination, which of the following header field(s) is (are) used?",
     options: [
-      "True Positive (TP)",
-      "False Positive (FP)",
-      "True Negative (TN)",
-      "False Negative (FN)"
+      "Fragment offset",
+      "Flags",
+      "Port number",
+      "Checksum",
+      "Identification"
     ],
-    answer: "False Positive (FP)"
+    answer: ["Fragment offset", "Flags", "Identification"]
   },
   {
-    question: "True or False: A False Negative in malware detection means the system correctly identifies a safe file as non-malicious.",
+    question: "An IP packet arrives at the final destination with the D flag set as 0, M flag set as 1 and offset is set to 0. Which of the following statements is true about the packet?",
     options: [
-      "True",
-      "False"
+      "The packet has not been fragmented.",
+      "The packet has been fragmented and it is the first fragment.",
+      "The packet has been fragmented and it is the last fragment.",
+      "None of these."
     ],
-    answer: "False"
+    answer: "The packet has been fragmented and it is the first fragment."
   },
   {
-    question: "A vulnerability in cybersecurity is best defined as:",
-    options: [
-      "A malicious program designed to damage systems",
-      "A security patch released by software vendors",
-      "A method used by attackers to gain unauthorized access",
-      "A weakness or flaw in technology, processes, or human behavior that leaves systems open to exploitation"
-    ],
-    answer: "A weakness or flaw in technology, processes, or human behavior that leaves systems open to exploitation"
+    question: "In an IP packet, the value of HLEN is 15, and the total size of IP packet is 2000 bytes. The number of data bytes in the packet will be",
+    options: [],
+    answer: "1940"
   },
   {
-    question: "An exploit is primarily:",
+    question: "Which address classes do the IP addresses 128.0.1.3 and 193.11.23.10 belong to?",
     options: [
-      "A weakness in system security that needs patching",
-      "A technique used to compromise a system",
-      "A novel self-protecting antivirus software",
-      "A security framework for risk assessment"
+      "Class A and Class B",
+      "Class B and Class C",
+      "Class C and Class D",
+      "Class A and Class C"
     ],
-    answer: "A technique used to compromise a system"
+    answer: "Class B and Class C"
   },
   {
-    question: "True or False: Accuracy is an attribute of information that describes how data is genuine or original rather than reproduced or fabricated.",
+    question: "Which IP addresses are reserved for private use?",
     options: [
-      "True",
-      "False"
+      "10.x.x.x",
+      "172.32.x.x",
+      "192.168.x.x",
+      "128.x.x.x"
     ],
-    answer: "False"
+    answer: ["10.x.x.x", "192.168.x.x"]
   },
   {
-    question: "What is a recommended defense against phishing emails?",
+    question: "What does a TCP segment with SYN=1 and ACK=0 indicate?",
     options: [
-      "Always open attachments to check content",
-      "Click links only if the sender is familiar",
-      "Verify the source and avoid clicking suspicious links",
-      "Forward the email to colleagues"
+      "Connection termination",
+      "Connection reset",
+      "Keep-alive signal",
+      "Initial connection request",
+      "Connection acknowledgement"
     ],
-    answer: "Verify the source and avoid clicking suspicious links"
+    answer: "Initial connection request"
   },
   {
-    question: "Which of the following are best practices for balancing information security and access? (Select all that apply.)",
+    question: "What is the size of UDP header?",
     options: [
-      "Regular review of user access rights",
-      "Implementing role-based access control",
-      "Granting blanket access to all employees",
-      "Monitoring and auditing access logs"
+      "16 bits",
+      "16 bytes",
+      "8 bits",
+      "8 bytes"
     ],
-    answer: [
-      "Regular review of user access rights",
-      "Implementing role-based access control",
-      "Monitoring and auditing access logs"
-    ]
+    answer: "8 bytes"
   },
   {
-    question: "In an information system, which component is responsible for enabling communication and data transfer between devices?",
+    question: "What is the subnet address if the destination IP address is 192.168.77.213 and the subnet mask is 255.255.252.0?",
     options: [
-      "Hardware",
-      "Software",
-      "Networks",
-      "Data"
+      "192.168.76.0",
+      "192.168.76.213",
+      "192.168.77.0",
+      "192.168.0.0"
     ],
-    answer: "Networks"
+    answer: "192.168.76.0"
   },
 
-  // --- Week 3: Assignment 3 (10 Questions) ---
+  // --- Week 3: IP Routing and Protocols (10 Questions) ---
   {
-    question: "A company's risk register lists \"third-party data breach\" as a critical risk. Which GRC function is primarily responsible for ensuring ongoing monitoring and mitigation of this risk?",
+    question: "Which of the following statement(s) is/are false?",
     options: [
-      "Governance",
-      "Reducible Breach",
-      "Compliance",
-      "Risk Management"
+      "IP protocol uses connection-oriented routing.",
+      "IP protocol uses connection-less routing.",
+      "In connection-less routing, each packet is treated as an independent packet.",
+      "None of these."
     ],
-    answer: "Risk Management"
+    answer: "IP protocol uses connection-oriented routing."
   },
   {
-    question: "Which of the following statements is correct regarding the implementation of a GRC framework?",
+    question: "A routing table entry that is manually configured remains unchanged unless manually modified is called a _____ routing table entry.",
     options: [
-      "Implementing a GRC framework guarantees that an organization has immunity from all cyber threats.",
-      "A GRC framework helps organizations identify, assess, and mitigate cyber risks, but does not make them fully immune to threats.",
-      "GRC frameworks are only relevant for financial compliance and do not address cybersecurity.",
-      "GRC frameworks eliminate the need for cybersecurity controls."
+      "Automatic",
+      "Static",
+      "Dynamic",
+      "None of these"
     ],
-    answer: "A GRC framework helps organizations identify, assess, and mitigate cyber risks, but does not make them fully immune to threats."
+    answer: "Static"
   },
   {
-    question: "True or False: de facto standard refers to instructions that dictate certain standard behavior within an organization.",
+    question: "Which of the following statements is/are false about direct and indirect packet delivery?",
     options: [
-      "True",
-      "False"
+      "Direct delivery happens within the same network.",
+      "Indirect delivery is used for different networks.",
+      "In indirect delivery packet travel through multiple routers.",
+      "None of these."
     ],
-    answer: "False"
+    answer: "None of these."
   },
   {
-    question: "Which of the following refers to a detailed statement of what must be done to comply with policy?",
+    question: "Which of the following statements correctly describe features of dynamic routing?",
     options: [
-      "de jure practices",
-      "guidelines",
-      "standard",
-      "procedures"
+      "All routers are manually configured by the network administrator.",
+      "Routing table updates periodically depending on the network condition.",
+      "Routers exchange control information, which consumes network resources.",
+      "It can automatically find alternate paths during link failures.",
+      "It never changes the routing table once initialized."
     ],
-    answer: "standard"
+    answer: ["Routing table updates periodically depending on the network condition.", "Routers exchange control information, which consumes network resources.", "It can automatically find alternate paths during link failures."]
   },
   {
-    question: "If an organization's policy states \"All confidential data must be protected,\" which of the following would be the most appropriate standard to support this policy?",
+    question: "In the routing table, which of the following flags indicates that the route uses a gateway to reach the destination?",
     options: [
-      "Employees should consider using strong passwords",
-      "Confidential data must be encrypted using AES-256",
-      "Steps for reporting a data breach",
-      "Encouraging staff to attend security training"
+      "U",
+      "G",
+      "H",
+      "D",
+      "M"
     ],
-    answer: "Confidential data must be encrypted using AES-256"
+    answer: "G"
   },
   {
-    question: "True or False: Compliance activities in a GRC framework are limited to following internal company policies and do not involve external laws or regulations.",
+    question: "Which of the following statement about the default route is incorrect?",
     options: [
-      "True",
-      "False"
+      "It is specified by an address 0.0.0.0.",
+      "It is specified by an address 127.0.0.1.",
+      "It is used for forwarding packets to unknown destinations.",
+      "None of these."
     ],
-    answer: "False"
+    answer: "It is specified by an address 127.0.0.1."
   },
   {
-    question: "Which of the following are examples of preventive controls in IT security? (Select all that apply.)",
+    question: "Which of the following routing protocols suffers from the count-to-infinity problem?",
     options: [
-      "Firewall configuration blocking unauthorized ports",
-      "Security awareness training for employees",
-      "Daily review of audit logs",
-      "Multi-factor authentication (MFA) for system access",
-      "Data backup and recovery solutions"
+      "OSFP",
+      "BGP",
+      "RIP",
+      "None of these."
     ],
-    answer: [
-      "Firewall configuration blocking unauthorized ports",
-      "Security awareness training for employees",
-      "Multi-factor authentication (MFA) for system access"
-    ]
+    answer: "RIP"
   },
   {
-    question: "Which framework, developed by the IT community, prioritizes IT control objectives and is specified by ISACA (Information Systems Audit and Control Association)?",
+    question: "Which of the following routing protocols is used for routing between different autonomous systems?",
     options: [
-      "COBIT",
-      "COSO",
-      "ISO/IEC 27001",
-      "NIST Cybersecurity Framework"
+      "RIP",
+      "OSFP",
+      "BGP",
+      "ICMP"
     ],
-    answer: "COBIT"
+    answer: "BGP"
   },
   {
-    question: "Which of the following statements about the NIST Cybersecurity Framework are NOT correct? (Select all that apply.)",
+    question: "In Open Shortest Path First (OSPF) routing protocol, which of the following packets is used to check if the neighbor router is up(active)?",
     options: [
-      "It guarantees complete protection against all cyber threats.",
-      "Only large organizations can benefit from it.",
-      "The framework is rigid and cannot be customized to fit an organization's needs.",
-      "Implementing it is a one-time activity and does not require ongoing updates.",
-      "It deals only with technology and does not consider employee training or policies."
+      "Link State Request",
+      "Hello Packet",
+      "Link State Acknowledgement",
+      "TCP 3-way handshake",
+      "None of these"
     ],
-    answer: [
-      "It guarantees complete protection against all cyber threats.",
-      "Only large organizations can benefit from it.",
-      "The framework is rigid and cannot be customized to fit an organization's needs.",
-      "Implementing it is a one-time activity and does not require ongoing updates.",
-      "It deals only with technology and does not consider employee training or policies."
-    ]
+    answer: "Hello Packet"
   },
   {
-    question: "Which of the following statements is correct regarding ISO 27001 certification?",
+    question: "Which of the following statement(s) is/are false for IPv6?",
     options: [
-      "ISO 27001 certification is only relevant for government agencies.",
-      "ISO 27001 certification can be issued to both organizations and individuals.",
-      "ISO 27001 certification can only be issued to organizations.",
-      "ISO 27001 certification is only available to individuals, not organizations."
+      "IPv6 supports address class like A, B, and C.",
+      "IPv6 address are 128-bit long.",
+      "The base header size in IPv6 is 40 byte.",
+      "None of these."
     ],
-    answer: "ISO 27001 certification can only be issued to organizations."
+    answer: "IPv6 supports address class like A, B, and C."
   },
 
-  // --- Week 4: Assignment 4 (10 Questions) ---
+  // --- Week 4: Reconnaissance and Nmap Basics (10 Questions) ---
   {
-    question: "_________ is the actions taken by management to specify the intermediate goals and objectives of the organization in order to obtain specified strategic goals, followed by estimates and schedules for the allocation of resources necessary to achieve those goals and objectives.",
+    question: "Which of the following statement(s) is/are true?",
     options: [
-      "Tactical Planning",
-      "Strategic Planning",
-      "Operational Planning",
-      "Business Continuity Planning"
+      "A hypervisor allows one host to run multiple virtual machines by sharing resources.",
+      "A hypervisor requires one physical machine per virtual machine.",
+      "A hypervisor can only run one virtual machine at a time.",
+      "Kali-linux is hack proof hypervisor.",
+      "None of these."
     ],
-    answer: "Tactical Planning"
+    answer: "A hypervisor allows one host to run multiple virtual machines by sharing resources."
   },
   {
-    question: "True or False: Strategic plans are used to create operational plans, which in turn are used to develop tactical plans.",
+    question: "Which of the following statement(s) is/are true about 'Passive Reconnaissance'?",
     options: [
-      "True",
-      "False"
+      "Information about the target is collected indirectly.",
+      "Information about the target is collected directly.",
+      "There is a chance of detection.",
+      "There is no chance of detection."
     ],
-    answer: "False"
+    answer: ["Information about the target is collected indirectly.", "There is no chance of detection."]
   },
   {
-    question: "The actions taken by senior management to develop and implement a combined Disaster Recovery (DR) and Business Continuity (BC) policy, plan, and set of recovery teams is known as",
+    question: "Which operator is used in Google to search for an exact phrase?",
     options: [
-      "Business Resumption Planning (BRP)",
-      "Business Continuity Planning (BCP)",
-      "Disaster Recovery Planning (DCP)",
-      "Incident Response Planning (IRP)"
+      "AND",
+      "\"\" (double quotes)",
+      "+",
+      "()"
     ],
-    answer: "Business Resumption Planning (BRP)"
+    answer: "\"\" (double quotes)"
   },
   {
-    question: "_________ is an adverse event that could result in loss of an information asset or assets, but does not currently threaten the viability of the entire organization.",
+    question: "What does a WHOIS lookup provides?",
     options: [
-      "Disaster",
+      "Website loading speed.",
+      "Source code of webpage",
+      "Historical screenshot of website",
+      "Ownership and registration details of a domain."
+    ],
+    answer: "Ownership and registration details of a domain."
+  },
+  {
+    question: "Which search will show results from only the website swayam.gov.in?",
+    options: [
+      "swayam.gov.in",
+      "filetype:swayam.gov.in",
+      "site:swayam.gov.in",
+      "None of these"
+    ],
+    answer: "site:swayam.gov.in"
+  },
+  {
+    question: "What is the main function of Archive.org's Wayback Machine?",
+    options: [
+      "To view historical version of the website",
+      "To scan website for malware",
+      "To test internet speed.",
+      "To monitor websites uptime"
+    ],
+    answer: "To view historical version of the website"
+  },
+  {
+    question: "An ICMP sweep scan is used to:",
+    options: [
+      "Block TCP connection",
+      "Scan for DNS servers",
+      "Detect live hosts",
+      "Detect phishing emails."
+    ],
+    answer: "Detect live hosts"
+  },
+  {
+    question: "Which of the following tools is primarily used for network scanning, including host discovery and port scanning?",
+    options: [
+      "Wireshark",
+      "DNSEnum",
+      "Notepad++",
+      "None of these"
+    ],
+    answer: "None of these"
+  },
+  {
+    question: "Which of the following option tells NMAP to skip port scanning and perform only host discovery?",
+    options: [
+      "-ss",
+      "-O",
+      "-sn",
+      "-p"
+    ],
+    answer: "-sn"
+  },
+  {
+    question: "How many ports does NMAP scan by default when no specific port option is provided?",
+    options: [],
+    answer: "1000"
+  },
+
+  // --- Week 5: Nmap Scripts, Brute-Forcing, and Malware (10 Questions) ---
+  {
+    question: "Where are the default NMAP scripts stored in a typical Linux system?",
+    options: [
+      "/usr/bin/nmap/scripts",
+      "/usr/share/nmap/scripts",
+      "/opt/nmap/scripts",
+      "/etc/nmap/scripts"
+    ],
+    answer: "/usr/share/nmap/scripts"
+  },
+  {
+    question: "Which of the following NMAP options runs the default set of NSE scripts?",
+    options: [
+      "--nse",
+      "--script=all",
+      "--script default",
+      "--run-default"
+    ],
+    answer: "--script default"
+  },
+  {
+    question: "Which of the following NMAP scripts checks for vulnerabilities to a Slowloris DoS attack?",
+    options: [
+      "http-slowloris-test",
+      "http-slowloris-discovery",
+      "http-slowloris-check",
+      "http-slowloris-flood",
+      "None of these"
+    ],
+    answer: "http-slowloris-check"
+  },
+  {
+    question: "Which of the following NMAP scripts is used to identify the OS of the target system?",
+    options: [
+      "http-os-brute",
+      "smb-os-brute",
+      "smb-brute",
+      "smb-os-attack",
+      "None of these"
+    ],
+    answer: "None of these"
+  },
+  {
+    question: "Which of the following best describes the function of the crunch tool in hacking?",
+    options: [
+      "It scans open ports and running services on a target system.",
+      "It generates custom wordlist for password attacks.",
+      "It hashes passwords using various algorithms.",
+      "It decrypts SSL/TLS encrypted traffic.",
+      "None of these.."
+    ],
+    answer: "It generates custom wordlist for password attacks."
+  },
+  {
+    question: "What is the primary function of the hydra tool in penetration testing?",
+    options: [
+      "Generating custom wordlist for password attacks.",
+      "Performing OS fingerprinting",
+      "Performs ARP spoofing attacks",
+      "Brute-force login attempts on network services"
+    ],
+    answer: "Brute-force login attempts on network services"
+  },
+  {
+    question: "Which tool is most appropriate for performing a brute-force attack against remote login services such as Telnet, FTP, or SSH?",
+    options: [
+      "DNSEnum",
+      "Crunch",
+      "Hydra",
+      "Wireshark"
+    ],
+    answer: "Hydra"
+  },
+  {
+    question: "What is user enumeration?",
+    options: [
+      "Creating multiple user accounts on a system.",
+      "Deleting inactive user accounts",
+      "Identifying valid usernames on a target system or services",
+      "None of these."
+    ],
+    answer: "Identifying valid usernames on a target system or services"
+  },
+  {
+    question: "Which malware records the keystrokes that are typed on the keyboard?",
+    options: [
+      "Keylogger",
+      "Virus",
+      "Adware",
+      "None of these."
+    ],
+    answer: "Keylogger"
+  },
+  {
+    question: "Which of the following best describes the function of the ARP (Address Resolution Protocol)?",
+    options: [
+      "It maps IP addresses to MAC addresses in a local network.",
+      "It encrypts data at the transport layer.",
+      "It maps domain names to IP addresses.",
+      "It establishes secure tunnels between routers."
+    ],
+    answer: "It maps IP addresses to MAC addresses in a local network."
+  },
+
+  // --- Week 6: Cryptography and Attacks (10 Questions) ---
+  {
+    question: "Which of the following types of attack can the DoS attack be categorized into?",
+    options: [
+      "Interruption",
+      "Interception",
+      "Modification",
+      "Fabrication"
+    ],
+    answer: "Interruption"
+  },
+  {
+    question: "Which of the following statement(s) is/are false?",
+    options: [
+      "In symmetric key cryptography, separate keys are used by sender and receiver.",
+      "In symmetric key cryptography, a single key is used by sender and receiver.",
+      "In asymmetric key cryptography, separate keys are used by sender and receiver.",
+      "In asymmetric key cryptography, a single key is used by sender and receiver."
+    ],
+    answer: ["In symmetric key cryptography, separate keys are used by sender and receiver.", "In asymmetric key cryptography, a single key is used by sender and receiver."]
+  },
+  {
+    question: "Which of the following is an example of symmetric key cryptography?",
+    options: [
+      "AES",
+      "DES",
+      "RSA",
+      "None of these."
+    ],
+    answer: ["AES", "DES"]
+  },
+  {
+    question: "Which of the following is an example of asymmetric key cryptography?",
+    options: [
+      "RSA",
+      "DES",
+      "AES",
+      "None of these."
+    ],
+    answer: "RSA"
+  },
+  {
+    question: "How many bits are in an AES block?",
+    options: [
+      "64 bit",
+      "128 bit",
+      "192 bit",
+      "256 bit"
+    ],
+    answer: "128 bit"
+  },
+  {
+    question: "How many rounds does DES (56-bit key) use for encryption?",
+    options: [],
+    answer: "16"
+  },
+  {
+    question: "If the plain message is MEET ME and the key is a 1-digit number 2, then the encrypted message using Caesar cipher will be:",
+    options: [
+      "GCAYAM",
+      "NFFVOGP",
+      "FDDQFD",
+      "ODDVPG"
+    ],
+    answer: "ODDVPG"
+  },
+  {
+    question: "If a receiver A wants to carry out decryption on a message received from B using public-key cryptography, which of the following key will be used for decryption by A?",
+    options: [
+      "A's public key",
+      "A's private key",
+      "B's public key",
+      "B's private key"
+    ],
+    answer: "A's private key"
+  },
+  {
+    question: "AES uses an effective key length of ____ bits?",
+    options: [
+      "64 bit",
+      "128 bit",
+      "192 bit",
+      "256 bit",
+      "513 bit."
+    ],
+    answer: ["128 bit", "192 bit", "256 bit"]
+  },
+  {
+    question: "Which cryptographic algorithms uses the same key for encryption and decryption?",
+    options: [
+      "RSA",
+      "Diffie-Hellman",
+      "DES",
+      "AES"
+    ],
+    answer: ["DES", "AES"]
+  },
+
+  // --- Week 7: Cryptographic Hashing, Digital Signatures, and SSL/IPSec (10 Questions) ---
+  {
+    question: "Which type of mapping is implemented by cryptographic hash function?",
+    options: [
+      "One-to-One",
+      "Many-to-One",
+      "One-to-Many",
+      "Many-to-Many"
+    ],
+    answer: "Many-to-One"
+  },
+  {
+    question: "Two messages M₁ and M₂ are fed to a hash function HASH to generate the hash value: H₁=HASH(M₁), H₂=HASH(M₂). Which of the following options can never be true?",
+    options: [
+      "H₁=H₂ and M₁≠M₂",
+      "H₁≠H₂ and M₁=M₂",
+      "H₁≠H₂ and M₁≠M₂",
+      "H₁=H₂ and M₁=M₂"
+    ],
+    answer: "H₁≠H₂ and M₁=M₂"
+  },
+  {
+    question: "Which of the following is an example of an iterative hash function?",
+    options: [
+      "SHA-1",
+      "DES",
+      "AES",
+      "None of these."
+    ],
+    answer: "SHA-1"
+  },
+  {
+    question: "Which property of a cryptographic hash function states that it is computationally infeasible to find any second input M₂ such that HASH(M₁) = HASH(M₂) for any given M₁?",
+    options: [
+      "Pre-image resistance",
+      "Second pre-image resistance",
+      "Collision resistance",
+      "None of these."
+    ],
+    answer: "Second pre-image resistance"
+  },
+  {
+    question: "Which of the following statement(s) is/are true for an ideal cryptographic hash function?",
+    options: [
+      "It is one-way function",
+      "It is collision-free",
+      "It is a many-to-one function",
+      "None of these."
+    ],
+    answer: ["It is one-way function", "It is collision-free", "It is a many-to-one function"]
+  },
+  {
+    question: "Which of the following is not an objective of a digital signature?",
+    options: [
+      "Authentication",
+      "Non-repudiation",
+      "Data Integrity",
+      "Data modification."
+    ],
+    answer: "Data modification."
+  },
+  {
+    question: "Which of the following is a drawback of using a message digest for integrity checks?",
+    options: [
+      "Low computation cost",
+      "Fixed length output",
+      "No authentication/integrity check",
+      "Susceptible to birthday attacks."
+    ],
+    answer: "No authentication/integrity check"
+  },
+  {
+    question: "In a digital signature, the signature is generated by encrypting the message digest with the sender's",
+    options: [
+      "Public key",
+      "Session key",
+      "Private key",
+      "Receiver's private key."
+    ],
+    answer: "Private key"
+  },
+  {
+    question: "Which of the following is not an objective of SSL?",
+    options: [
+      "Authentication",
+      "Data Integrity",
+      "Data Privacy",
+      "Faster Transmission"
+    ],
+    answer: "Faster Transmission"
+  },
+  {
+    question: "In IPSec, which mode encapsulates only the transport layer information with protection?",
+    options: [
+      "Tunnel Mode",
+      "Transport Mode",
+      "Replay Mode",
+      "Confidential Mode"
+    ],
+    answer: "Transport Mode"
+  },
+
+  // --- Week 8: Steganography, Biometrics, and DoS Attacks (10 Questions) ---
+  {
+    question: "Which one of the following best describes steganography?",
+    options: [
+      "Use encrypting/decryption technique so that data can be read only by intended recipient.",
+      "Hiding the existence of a message by embedding it inside another medium (audio/video/image).",
+      "Digitally sign a message to provide authenticity.",
+      "Compress data to reduce transmission size."
+    ],
+    answer: "Hiding the existence of a message by embedding it inside another medium (audio/video/image)."
+  },
+  {
+    question: "Which of the following is/are true about LSB steganography in images?",
+    options: [
+      "It is simple to implement.",
+      "It is robust against lossy compression like JPEG.",
+      "It works well with 24-bit images.",
+      "It is vulnerable to image manipulation and filtering."
+    ],
+    answer: ["It is simple to implement.", "It works well with 24-bit images.", "It is vulnerable to image manipulation and filtering."]
+  },
+  {
+    question: "Consider a RGB image of size 200x150, where each pixel is stored in 24-bits (3-color channels, 8-bits each). The number of bytes of information that can be hidden in the image using LSB steganography (replacing 1 LSB-bit in each channel of every pixel) is",
+    options: [],
+    answer: "11250"
+  },
+  {
+    question: "Which of the following does not correspond to physiological biometrics?",
+    options: [
+      "Fingerprint",
+      "Iris",
+      "Retina",
+      "Signature"
+    ],
+    answer: "Signature"
+  },
+  {
+    question: "Which biometric gives the highest uniqueness for identification but is often invasive?",
+    options: [
+      "Face",
+      "Voice",
+      "Signature",
+      "Iris/Retina"
+    ],
+    answer: "Iris/Retina"
+  },
+  {
+    question: "What is denial-of-service attack?",
+    options: [
+      "An attack on a system whereby stored files get modified or deleted.",
+      "An attack that prevents legitimate users from accessing some service.",
+      "An attack that modifies the stored password information in a system.",
+      "None of these."
+    ],
+    answer: "An attack that prevents legitimate users from accessing some service."
+  },
+  {
+    question: "A Smurf DoS attack works by:",
+    options: [
+      "Sending oversized IP packets to crash a host.",
+      "Sending forged ICMP echo requests to a broadcast address so that many hosts reply to the spoofed victim IP.",
+      "Exploiting a buffer overflow in web servers.",
+      "Using SQL injection to compromise database."
+    ],
+    answer: "Sending forged ICMP echo requests to a broadcast address so that many hosts reply to the spoofed victim IP."
+  },
+  {
+    question: "Which of the following is an example of denial-of-service attack?",
+    options: [
+      "Ping-of-death",
+      "SQL injection",
       "Phishing",
-      "Incident",
-      "Impact"
+      "Smurf attack"
     ],
-    answer: "Incident"
+    answer: ["Ping-of-death", "Smurf attack"]
   },
   {
-    question: "Contingency Plan includes",
+    question: "What is the main purpose of Domain Name System (DNS)?",
     options: [
-      "Incident Response Planning (IRP), Organizational Planning (OP), and Business Continuity Planning (BCP)",
-      "Organizational Planning (OP), Disaster Recovery Planning (DRP), and Business Continuity Planning (BCP)",
-      "Incident Response Planning (IRP), Disaster Recovery Planning (DRP), and Tactical Planning (TP)",
-      "Incident Response Planning (IRP), Disaster Recovery Planning (DRP), and Business Continuity Planning (BCP)"
+      "To provide end-to-end encryption for emails.",
+      "To map human-readable domain names to IP addresses.",
+      "To compress and segment long messages.",
+      "To hide secret data inside images."
     ],
-    answer: "Incident Response Planning (IRP), Disaster Recovery Planning (DRP), and Business Continuity Planning (BCP)"
+    answer: "To map human-readable domain names to IP addresses."
   },
   {
-    question: "_________ is an investigation and assessment of adverse events that can affect the organization, conducted as a preliminary phase of the contingency planning process.",
+    question: "A Distributed Denial-of-Service (DDoS) attack differs from DoS primarily because:",
     options: [
-      "Business Contingency Plan",
-      "Direct Changeover Conversion Strategy",
-      "Crisis Management Planning",
-      "Business Impact Analysis"
+      "DDoS targets multiple victim servers at once.",
+      "DDoS uses multiple compromised machines (botnet) to attack a single target, increasing scale and obfuscation.",
+      "DDoS only uses UDP while DoS uses TCP.",
+      "There is no difference between DDoS and DoS."
     ],
-    answer: "Business Impact Analysis"
-  },
-  {
-    question: "_________ is the total amount of time the system owner is willing to accept for a mission/business process outage or disruption, including all impact considerations.",
-    options: [
-      "Recovery Time Objective",
-      "Work Recovery Time",
-      "Maximum Tolerable Downtime",
-      "Total Recovery Time"
-    ],
-    answer: "Maximum Tolerable Downtime"
-  },
-  {
-    question: "The presence or execution of unknown programs or processes is a",
-    options: [
-      "Possible incident indicator",
-      "Probable incident indicator",
-      "Definite incident indicator",
-      "All the above"
-    ],
-    answer: "Possible incident indicator"
-  },
-  {
-    question: "An organization can choose from several cost-based strategies when planning for business continuity. _________ is a facility that provides only basic services, with no computer hardware or peripherals.",
-    options: [
-      "Hot Sites",
-      "Warm Sites",
-      "Cold Sites",
-      "Yellow Sites"
-    ],
-    answer: "Cold Sites"
-  },
-  {
-    question: "Which of the following statements accurately distinguish between a threat and an attack in cybersecurity? (Select all that apply.)",
-    options: [
-      "A threat is a potential danger, while an attack is an active action taken to exploit that danger",
-      "An attack can exist without a preceding threat",
-      "A threat actor often carries out an attack",
-      "An attack's success always depends on the existence of a vulnerability that the threat agent can exploit"
-    ],
-    answer: [
-      "A threat is a potential danger, while an attack is an active action taken to exploit that danger",
-      "A threat actor often carries out an attack",
-      "An attack's success always depends on the existence of a vulnerability that the threat agent can exploit"
-    ]
+    answer: "DDoS uses multiple compromised machines (botnet) to attack a single target, increasing scale and obfuscation."
   },
 
-  // --- Week 5: Assignment 5 (10 Questions) ---
+  // --- Week 9: Sniffing, Spoofing, and Social Engineering (10 Questions) ---
   {
-    question: "Which of the following statement is not true?",
+    question: "Which mode allows a network interface card (NIC) to capture all traffic on the network segment regardless of the destination?",
     options: [
-      "Policies direct how issues should be addressed and technologies should be used.",
-      "Information security policy is best disseminated in a comprehensive security education, training, and awareness (SETA) program.",
-      "Policies are more detailed than standards and describe the steps that must be taken to conform to standards.",
-      "Management must use policies as the basis for all information security planning, design, and deployment."
+      "Monitor mode",
+      "Transparent mode",
+      "Promiscuous mode",
+      "Hypervisor mode"
     ],
-    answer: "Policies are more detailed than standards and describe the steps that must be taken to conform to standards."
+    answer: "Promiscuous mode"
   },
   {
-    question: "_________ is an organizational policy that provides detailed, targeted guidance to instruct all members of the organization in the use of a resource, such as one of its processes or technologies.",
+    question: "Which of the following is/are not a feature of Wireshark?",
     options: [
-      "Systems-specific security policy",
-      "Issue-specific security policy",
-      "Enterprise information security policy",
-      "General or security program policy"
+      "Captures and analyzes packets",
+      "Generates statistical reports",
+      "Manipulates live network traffic",
+      "Carries out SQL injection attack"
     ],
-    answer: "Issue-specific security policy"
+    answer: ["Manipulates live network traffic", "Carries out SQL injection attack"]
   },
   {
-    question: "Which of the following is not a component of Enterprise information security policy?",
+    question: "Which of the following protocols are vulnerable to sniffing attack?",
     options: [
-      "Statement of Purpose",
-      "Information Security Responsibilities and Roles",
-      "Reference to other Information Standards and Guidelines",
-      "Statement of Policy"
+      "HTTP",
+      "FTP",
+      "HTTPS",
+      "SSL"
     ],
-    answer: "Statement of Policy"
+    answer: ["HTTP", "FTP"]
   },
   {
-    question: "_________ contains the specifications of authorization that govern the rights and privileges of users to a particular information asset.",
+    question: "Which of the following is an example of an Active Sniffing attack?",
     options: [
-      "Access Control List (ACL)",
-      "Capabilities Table",
-      "Configuration Rules",
-      "Authentication Protocol"
+      "ARP spoofing",
+      "DNS poisoning",
+      "MAC flooding",
+      "All of these"
     ],
-    answer: "Access Control List (ACL)"
+    answer: "All of these"
   },
   {
-    question: "Access Control Matrix combines the information in",
+    question: "Which of the following is/are true for ARP Spoofing?",
     options: [
-      "Access Control List (ACL)s and Capability Tables.",
-      "Access Control List (ACL)s and Authentication Protocol.",
-      "Authentication Protocol and Capability Tables.",
-      "Configuration Rules and Capability Tables."
+      "It is an active sniffing attack",
+      "It is a passive sniffing attack",
+      "It redirects traffic to the attacker",
+      "It is used in MitM attack"
     ],
-    answer: "Access Control List (ACL)s and Capability Tables."
+    answer: ["It is an active sniffing attack", "It redirects traffic to the attacker", "It is used in MitM attack"]
   },
   {
-    question: "Which of the following best differentiates cyber hygiene from cybersecurity?",
+    question: "A DoS attack that targets the Domain Name System (DNS) to overload servers and prevent name resolution is known as:",
     options: [
-      "Cyber hygiene is hardware-focused, while cybersecurity is software-focused.",
-      "Cyber hygiene is reactive in nature, while cybersecurity is always proactive.",
-      "Cyber hygiene involves routine practices for maintaining digital health, whereas cybersecurity includes broader strategies, technologies, and incident response.",
-      "Cyber hygiene focuses only on personal devices, while cybersecurity is limited to organizations."
+      "Ping-of-death",
+      "Smurf attack",
+      "DNS Flood",
+      "Phishing"
     ],
-    answer: "Cyber hygiene involves routine practices for maintaining digital health, whereas cybersecurity includes broader strategies, technologies, and incident response."
+    answer: "DNS Flood"
   },
   {
-    question: "True or False: Configuration rules govern how a security system reacts to the data it receives.",
+    question: "Which of the following is an example of a human-based social engineering attack?",
     options: [
-      "True",
-      "False"
+      "Tailgating",
+      "Impersonation",
+      "Dumpster diving",
+      "Phishing"
     ],
-    answer: "True"
+    answer: ["Tailgating", "Impersonation", "Dumpster diving"]
   },
   {
-    question: "Which of the following is not true about Systems-Specific Security Policies (SysSPs)?",
+    question: "A DoS attack that exploits the TCP three-way handshake is called:",
     options: [
-      "SysSPs can be separated into two general groups, managerial guidance SysSPs and technical specifications SysSPs.",
-      "SysSPs function as standards or procedures to be used when configuring or maintaining systems.",
-      "SysSPs can be combined into a single policy document that contains elements of both managerial guidance SysSPs and technical specifications SysSPs.",
-      "SysSPs can be developed at the same time as Issue-specific policies (ISSPs), or they can be prepared after their related ISSPs."
+      "SYN Flooding",
+      "ICMP Flood",
+      "Ping of Death",
+      "UDP Flood"
     ],
-    answer: "SysSPs can be developed at the same time as Issue-specific policies (ISSPs), or they can be prepared after their related ISSPs."
+    answer: "SYN Flooding"
   },
   {
-    question: "Which of the following are the basic rules that should be followed when shaping a policy?",
+    question: "Which tool performs a DoS attack by sending partial HTTP requests and never completing them?",
     options: [
-      "Never conflict with law",
-      "Properly supported and administered",
-      "Involve end users of information systems",
-      "All the above"
+      "Hydra",
+      "Wireshark",
+      "Slowloris",
+      "Crunch"
     ],
-    answer: "All the above"
+    answer: "Slowloris"
   },
   {
-    question: "The statement “Use strong passwords, frequently changed.” is an example of",
+    question: "Which of the following best defines a Botnet?",
     options: [
-      "Practice",
-      "Standard",
-      "Guideline",
-      "Policy"
+      "A network of legitimate IoT devices",
+      "A protocol for DoS mitigation",
+      "A security feature in switches",
+      "A group of compromised systems remotely controlled by an attacker"
     ],
-    answer: "Policy"
-  },
-
-  // --- Week 6: Assignment 6 (10 Questions) ---
-  {
-    question: "Risk management involves three major undertakings:",
-    options: [
-      "Risk Auditing, Risk Assessment, and Risk Control",
-      "Risk Identification, Risk Assessment, and Risk Auditing",
-      "Risk Identification, Risk Assessment, and Risk Control",
-      "Risk Monitoring, Risk Assessment, and Risk Auditing"
-    ],
-    answer: "Risk Identification, Risk Assessment, and Risk Control"
-  },
-  {
-    question: "Determine Loss Frequency (Likelihood) comes under:",
-    options: [
-      "Risk Identification",
-      "Risk Auditing",
-      "Risk Monitoring",
-      "Risk Assessment"
-    ],
-    answer: "Risk Assessment"
-  },
-  {
-    question: "Residual risk is a combined function of:",
-    options: [
-      "(1) a threat less the effect of threat-reducing safeguards, (2) a vulnerability less the effect of vulnerability-reducing safeguards, and (3) an asset less the effect of asset value-reducing safeguards.",
-      "(1) a threat less the effect of threat-reducing safeguards, (2) a vulnerability plus the effect of vulnerability-reducing safeguards, and (3) an asset less the effect of asset value-reducing safeguards",
-      "(1) a threat plus the effect of threat-reducing safeguards, (2) a vulnerability plus the effect of vulnerability-reducing safeguards, and (3) an asset plus the effect of asset value-reducing safeguards",
-      "(1) a threat plus the effect of threat-reducing safeguards, (2) a vulnerability plus the effect of vulnerability-reducing safeguards, and (3) an asset less the effect of asset value-reducing safeguards"
-    ],
-    answer: "(1) a threat less the effect of threat-reducing safeguards, (2) a vulnerability less the effect of vulnerability-reducing safeguards, and (3) an asset less the effect of asset value-reducing safeguards."
-  },
-  {
-    question: "Risk tolerance defines the quantity and nature of risk that organizations are willing to accept as they evaluate the trade-offs between perfect security and unlimited accessibility.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: "True"
-  },
-  {
-    question: "The calculation of the likelihood of an attack coupled with the attack frequency to determine the expected number of losses within a specified time range is called:",
-    options: [
-      "Attack Success Probability",
-      "Loss Frequency",
-      "Loss Magnitude",
-      "Probable Loss"
-    ],
-    answer: "Loss Frequency"
-  },
-  {
-    question: "Based on the given scenario for TechNova Inc., using the formula: Risk = (Loss Frequency × Loss Magnitude) + Uncertainty Term, calculate the final risk score for Asset A.",
-    options: [
-      "2.75",
-      "2.5",
-      "3.75",
-      "2.25"
-    ],
-    answer: "2.75"
-  },
-  {
-    question: "Which of the following is not true?",
-    options: [
-      "The mitigation risk control strategy attempts to shift risk to other assets, other processes, or other organizations.",
-      "The mitigation risk control strategy reduces the impact of the loss caused by a realized incident, disaster, or attack through effective contingency planning and preparation.",
-      "The mitigation risk control strategy attempts to reduce the impact of an attack rather than reduce the success of the attack itself.",
-      "The mitigation risk control strategy requires the creation of three types of contingency plans: the incident response plan, the disaster recovery plan, and the business continuity plan."
-    ],
-    answer: "The mitigation risk control strategy attempts to shift risk to other assets, other processes, or other organizations."
-  },
-  {
-    question: "The process of identifying and documenting specific and provable flaws in the organization’s information asset environment is known as:",
-    options: [
-      "Risk Assessment",
-      "Vulnerability Assessment",
-      "Asset Scanning",
-      "Risk Control"
-    ],
-    answer: "Vulnerability Assessment"
-  },
-  {
-    question: "“Blackmail threat of information disclosure” is an example of:",
-    options: [
-      "Espionage or trespass",
-      "Compromises to intellectual property",
-      "Information extortion",
-      "Sabotage or vandalism"
-    ],
-    answer: "Information extortion"
-  },
-  {
-    question: "Which of the following statements is/are true? (Select all that apply)",
-    options: [
-      "Risk management examines and documents the information technology security being used in an organization.",
-      "A key component of a risk management strategy is the identification and classification of the organization’s information assets, while prioritization is performed only after risk controls are implemented.",
-      "Risk management helps an organization identify vulnerabilities in its information systems and take carefully reasoned steps to assure the confidentiality, integrity, and availability of all components in those systems.",
-      "The goal of risk assessment is to assign a risk rating or score that represents the relative risk for a specific vulnerability of an information asset."
-    ],
-    answer: [
-      "Risk management examines and documents the information technology security being used in an organization.",
-      "Risk management helps an organization identify vulnerabilities in its information systems and take carefully reasoned steps to assure the confidentiality, integrity, and availability of all components in those systems.",
-      "The goal of risk assessment is to assign a risk rating or score that represents the relative risk for a specific vulnerability of an information asset."
-    ]
+    answer: "A group of compromised systems remotely controlled by an attacker"
   },
 
-  // --- Week 7: Assignment 7 (10 Questions) ---
+  // --- Week 10: Hardware Attacks and PUF (10 Questions) ---
   {
-    question: "__________ is the principle that an individual is entrusted to safeguard and control equipment, keying material, and information and is answerable to proper authority for the loss or misuse of that equipment or information.",
+    question: "Which of the following is/are not an example of hardware-based attack?",
     options: [
-      "Auditability",
-      "Accountability",
-      "Confidentiality",
-      "Responsibility"
+      "Side-channel attack",
+      "Physical probing",
+      "Denial of service",
+      "SQL injection"
     ],
-    answer: "Accountability"
+    answer: ["Denial of service", "SQL injection"]
   },
   {
-    question: "Which of the following rings provides the least privileges in an Operating System?",
+    question: "Which of the following are typically exploited in side-channel attacks?",
     options: [
-      "Ring 0",
-      "Ring 1",
-      "Ring 2",
-      "Ring 3"
+      "Time required to carry out operations",
+      "Electromagnetic emissions from the device",
+      "Space complexity of the algorithm",
+      "Plaintext and Ciphertext",
+      "Power consumed during computation"
     ],
-    answer: "Ring 3"
+    answer: ["Time required to carry out operations", "Electromagnetic emissions from the device", "Power consumed during computation"]
   },
   {
-    question: "Which of the following is not true about asymmetric encryption?",
+    question: "Which of the following attacks on hardware are invasive in nature?",
     options: [
-      "Asymmetric encryption incorporates mathematical operations involving both a public key and a private key to encipher or decipher a message.",
-      "Asymmetric encryption relies on asymmetric cryptography, also known as private key cryptography.",
-      "Rivest Shamir Adleman (RSA) is an example of asymmetric encryption.",
-      "Asymmetric cryptography has two primary use cases: authentication and confidentiality."
+      "Black-box testing",
+      "Physical probing",
+      "Reverse engineering",
+      "Side-channel attack"
     ],
-    answer: "Asymmetric encryption relies on asymmetric cryptography, also known as private key cryptography."
+    answer: ["Physical probing", "Reverse engineering"]
   },
   {
-    question: "Which team is responsible for defending against cyber threats by implementing security measures and monitoring systems for suspicious activities?",
+    question: "Which of the following can be used as countermeasures to prevent hardware-based attacks?",
     options: [
-      "Red Team",
-      "Yellow Team",
-      "Green Team",
-      "Blue Team"
+      "Obfuscate data in register and buses",
+      "Add dummy circuit to generate random noise",
+      "Increase CPU clock frequency to make probing harder",
+      "Use secure cryptographic algorithm"
     ],
-    answer: "Blue Team"
+    answer: ["Obfuscate data in register and buses", "Add dummy circuit to generate random noise"]
   },
   {
-    question: "True or False : Attribution, the process of identifying the perpetrators of cyber attacks, is easily achievable in cyberspace.",
+    question: "What is hardware Trojan?",
     options: [
-      "True",
-      "False"
+      "A virus that infects software",
+      "A malicious change inside a chip",
+      "A tool used for testing hardware",
+      "A feature to make hardware faster"
     ],
-    answer: "False"
+    answer: "A malicious change inside a chip"
   },
   {
-    question: "What does the \"Command and Control\" stage of the Intrusion Kill Chain involve?",
+    question: "Which of the following is/are true for differential power analysis?",
     options: [
-      "Gaining initial access to target system",
-      "Executing malicious code on target system",
-      "Establishing a communication channel to remotely access the compromised system.",
-      "Exploiting vulnerabilities to gain control of target system"
+      "It requires a single measurement",
+      "It requires multiple measurements",
+      "It is more effective than simple power analysis",
+      "It is less effective than simple power analysis"
     ],
-    answer: "Establishing a communication channel to remotely access the compromised system."
+    answer: ["It requires multiple measurements", "It is more effective than simple power analysis"]
   },
   {
-    question: "Which layer of the OSI model provides reliable data transfer and error control of connections?",
+    question: "Which of the following statement(s) is/are false?",
     options: [
-      "Network layer",
-      "Data Link layer",
-      "Physical layer",
-      "Transport layer"
+      "Detection of hardware Trojans is relatively easy",
+      "No single method can detect all types of hardware Trojans",
+      "Hardware Trojan detection often involves high design, testing, or runtime overhead",
+      "Hardware Trojans are always inserted at the software level"
     ],
-    answer: "Transport layer"
+    answer: ["Detection of hardware Trojans is relatively easy", "Hardware Trojans are always inserted at the software level"]
   },
   {
-    question: "Which of the following statements about ethical hacking is/are correct? (Select all that apply)",
+    question: "For modular exponentiation computation of x^25, how many squaring and multiplication operations would be required?",
     options: [
-      "Ethical hackers operate with explicit permission from the organization",
-      "Ethical hackers communicate findings to the organization.",
-      "Ethical hackers exploit a system's vulnerabilities for personal gain, without a formal agreement.",
-      "Ethical hacking is a proactive measure for security posture."
+      "3 and 2",
+      "3 and 3",
+      "3 and 4",
+      "4 and 2"
+    ],
+    answer: "4 and 2"
+  },
+  {
+    question: "What is the main purpose of Physical Unclonable Function (PUF) in hardware security?",
+    options: [
+      "To increase the clock speed of the processor",
+      "To provide device-unique authentication",
+      "To reduce the power consumption of chips",
+      "To improve signal transmission speed"
+    ],
+    answer: "To provide device-unique authentication"
+  },
+  {
+    question: "Which of the following statements describe the evaluability property of PUF?",
+    options: [
+      "Given a PUF, it is hard to construct a procedure PUF', where PUF ≠ PUF' and PUF'(x) = PUF(x) for all x.",
+      "Given only y and corresponding PUF instance, it is hard to find x such that PUF(x) = y.",
+      "Given PUF and x, it should be easy to evaluate y=PUF(x).",
+      "None of these."
+    ],
+    answer: "Given PUF and x, it should be easy to evaluate y=PUF(x)."
+  },
+
+  // --- Week 11: Metasploit, SQL Injection, and XSS (10 Questions) ---
+  {
+    question: "Which of the following Metasploit modules is used to take advantage of a vulnerability on some target system?",
+    options: [
+      "Exploit",
+      "Payload",
+      "Auxiliary",
+      "Encoder",
+      "None of these"
+    ],
+    answer: "Exploit"
+  },
+  {
+    question: "Which of the following describes meterpreter accurately?",
+    options: [
+      "It is a static payload generator.",
+      "It is an interactive payload that allows remote commands and file operations.",
+      "It is a Metasploits web Graphical User Interface.",
+      "It is a network scanner bundled with Metasploit.",
+      "It is a database for storing exploits."
+    ],
+    answer: "It is an interactive payload that allows remote commands and file operations."
+  },
+  {
+    question: "Which of the following commands would you use to find the hash value of the password for user 'user_a' in the system after successfully getting a meterpreter shell?",
+    options: [
+      "get hash",
+      "hash dump",
+      "cred dump",
+      "hash all"
+    ],
+    answer: "hash dump"
+  },
+  {
+    question: "Which of the following commands can be used to perform Privilege Escalation after getting a meterpreter shell?",
+    options: [
+      "getuid",
+      "getsystem",
+      "setprivilege",
+      "setuser"
+    ],
+    answer: "getsystem"
+  },
+  {
+    question: "Which of the following Metasploit modules is used to perform brute force attack, DoS attack, host and port scanning, vulnerability scanning, etc.?",
+    options: [
+      "Exploit",
+      "Payload",
+      "Auxiliary",
+      "Encoder",
+      "None of these"
+    ],
+    answer: "Auxiliary"
+  },
+  {
+    question: "Which of the following is/are an example of a SQL injection vulnerability?",
+    options: [
+      "Error-based SQL injection",
+      "Time-based Blind SQL injection",
+      "Union-based SQL injection",
+      "Tautology-based SQL injection",
+      "None of these"
     ],
     answer: [
-      "Ethical hackers operate with explicit permission from the organization",
-      "Ethical hackers communicate findings to the organization.",
-      "Ethical hacking is a proactive measure for security posture."
+      "Error-based SQL injection",
+      "Time-based Blind SQL injection",
+      "Union-based SQL injection",
+      "Tautology-based SQL injection"
     ]
   },
   {
-    question: "Which of the following statement is true?",
+    question: "Which of the following is/are an example of SQL injection payload?",
     options: [
-      "TCP is connectionless, and UDP is connection-oriented",
-      "TCP is connection-oriented, and UDP is connectionless",
-      "Both TCP and UDP are connectionless",
-      "Both TCP and UDP are connection-oriented"
-    ],
-    answer: "TCP is connection-oriented, and UDP is connectionless"
-  },
-  {
-    question: "What is the primary function of a Demilitarized Zone (DMZ) in network security architecture?",
-    options: [
-      "A special VPN to Increase the network speed for internal users",
-      "Create an isolated buffer zone for public-facing services, separating them from the internal network",
-      "Connect all internal devices directly to internet",
-      "Encrypt all outgoing network traffic"
-    ],
-    answer: "Create an isolated buffer zone for public-facing services, separating them from the internal network"
-  },
-
-  // --- Week 8: Assignment 8 (10 Questions) ---
-  {
-    question: "The five risk control strategies are:",
-    options: [
-      "Transference, mitigation, acceptance, optimization and termination",
-      "Defense, transference, mitigation, optimization, and termination",
-      "Defense, transference, mitigation, acceptance, and termination",
-      "Optimization, transference, mitigation, acceptance, and termination"
-    ],
-    answer: "Defense, transference, mitigation, acceptance, and termination"
-  },
-  {
-    question: "Which risk control strategy is also referred to as Risk Avoidance in NIST SP 800-30?",
-    options: [
-      "Optimization",
-      "Mitigation",
-      "Acceptance",
-      "Termination"
-    ],
-    answer: "Termination"
-  },
-  {
-    question: "Which of the following is not true?",
-    options: [
-      "Monoalphabetic substitution cipher incorporates only a single alphabet in the encryption process",
-      "Polyalphabetic substitution cipher incorporates two or more alphabets in the encryption process",
-      "Vigenère cipher is an advanced type of substitution cipher that uses a simple polyalphabetic code",
-      "Vernam cipher is implemented using tabula recta"
-    ],
-    answer: "Vernam cipher is implemented using tabula recta"
-  },
-  {
-    question: "Which of the following is NOT typically considered a factor affecting the cost of a control or safeguard?",
-    options: [
-      "Cost of development or acquisition of hardware, software, and services",
-      "Training fees for personnel",
-      "Cost of implementation (installation, configuration, and testing)",
-      "Marketing and advertising expenses"
-    ],
-    answer: "Marketing and advertising expenses"
-  },
-  {
-    question: "A website has an estimated value of $1 million. A hacker defacement scenario indicates that a deliberate act of sabotage could damage 10% of the site’s value. What is the Single Loss Expectancy (SLE)?",
-    options: [
-      "$1,000",
-      "$10,000",
-      "$100,000",
-      "$1,000,000"
-    ],
-    answer: "$100,000"
-  },
-  {
-    question: "A website has a Single Loss Expectancy (SLE) of $100,000. If the Annualized Rate of Occurrence (ARO) is estimated at 0.50, what is the Annualized Loss Expectancy (ALE)?",
-    options: [
-      "$5,000",
-      "$50,000",
-      "$100,000",
-      "$500,000"
-    ],
-    answer: "$50,000"
-  },
-  {
-    question: "Which of the following is true regarding Cost-Benefit Analysis (CBA), Annualized Loss Expectancy (ALE), and annualized cost of a safeguard (ACS)?",
-    options: [
-      "CBA = ALE(prior) - ALE(post) - ACS",
-      "CBA = ALE(prior) - ALE(post) + ACS",
-      "CBA = ALE(prior) + ALE(post) - ACS",
-      "CBA = ALE(prior) + ALE(post) + ACS"
-    ],
-    answer: "CBA = ALE(prior) - ALE(post) - ACS"
-  },
-  {
-    question: "Which of the following statements is/are correct? (Select all that apply)",
-    options: [
-      "Bit stream cipher is an encryption method that involves converting plaintext to ciphertext one bit at a time",
-      "Block cipher is an encryption method that involves dividing the plaintext into a sets of bits and then converting the plaintext to ciphertext one block at a time",
-      "Bit stream methods most commonly use algorithm functions like XOR, whereas block methods can use XOR, transposition, or substitution",
-      "Enciphering is the process of converting an encoded message back to its original readable form"
+      "UNION SELECT",
+      "' OR '1'='1' --",
+      "SLEEP()",
+      "NULL",
+      "SQL payload"
     ],
     answer: [
-      "Bit stream cipher is an encryption method that involves converting plaintext to ciphertext one bit at a time",
-      "Block cipher is an encryption method that involves dividing the plaintext into a sets of bits and then converting the plaintext to ciphertext one block at a time",
-      "Bit stream methods most commonly use algorithm functions like XOR, whereas block methods can use XOR, transposition, or substitution"
+      "UNION SELECT",
+      "' OR '1'='1' --",
+      "SLEEP()",
+      "NULL"
     ]
   },
   {
-    question: "_________ are encrypted messages that can be mathematically proven as authentic.",
+    question: "If any web page is vulnerable to blind SQL injection, then which of the following is true?",
     options: [
-      "Digital signatures",
-      "Digital Certificates",
-      "Message Authentication Codes",
-      "Hash values"
+      "It will print error message for incorrect user input.",
+      "It will not print anything for incorrect user input."
     ],
-    answer: "Digital signatures"
+    answer: "It will not print anything for incorrect user input."
   },
   {
-    question: "Which security concept ensures that a sender cannot deny having sent a message, by reversing public-key encryption to verify its origin?",
+    question: "Which of the following SQLMAP options can extract credential-related information?",
     options: [
-      "Confidentiality",
-      "Integrity",
-      "Nonrepudiation",
-      "Authentication"
-    ],
-    answer: "Nonrepudiation"
-  },
-
-  // --- Week 9: Assignment 9 (10 Questions) ---
-  {
-    question: "What is the earliest notion of privacy in history?",
-    options: [
-      "Privacy as a legal right with clearly defined boundaries",
-      "Privacy as freedom, emphasizing the right to be let alone",
-      "Privacy as a commercial concept related to data protection",
-      "Privacy as a national security concern"
-    ],
-    answer: "Privacy as freedom, emphasizing the right to be let alone"
-  },
-  {
-    question: "True or False: Privacy is an absolute right in the context of law.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: "False"
-  },
-  {
-    question: "The acronym FIPP stands for:",
-    options: [
-      "Fair Internet Privacy Policies",
-      "Federal Information Protection Protocols",
-      "Fair Information Practice Principles",
-      "Foundational Internet Privacy Procedures"
-    ],
-    answer: "Fair Information Practice Principles"
-  },
-  {
-    question: "The __________ view argues that privacy is not an independent concept but can be reduced to other rights like property or liberty.",
-    options: [
-      "Economic",
-      "Feminist",
-      "Political",
-      "Reductionist"
-    ],
-    answer: "Reductionist"
-  },
-  {
-    question: "What is the core principle of informational privacy?",
-    options: [
-      "The right to remain anonymous at all times",
-      "The complete elimination of all personal data collection",
-      "The responsibility of companies to prioritize profits over user privacy",
-      "The ability of individuals to decide what personal information they share and with whom"
-    ],
-    answer: "The ability of individuals to decide what personal information they share and with whom"
-  },
-  {
-    question: "The FIPPs were first introduced in a report by:",
-    options: [
-      "The Federal Trade Commission (FTC)",
-      "The European Union",
-      "The US Secretary's Advisory Committee on Automated Personal Data Systems",
-      "A private industry consortium"
-    ],
-    answer: "The US Secretary's Advisory Committee on Automated Personal Data Systems"
-  },
-  {
-    question: "According to India's DPDP Act, what/who is the 'data principle'?",
-    options: [
-      "The company that determines the purpose & means of data processing",
-      "An external auditor who verifies a company's data protection measures",
-      "The individual whose data is being processed/used",
-      "A government agency responsible for enforcing the law"
-    ],
-    answer: "The individual whose data is being processed/used"
-  },
-  {
-    question: "Which of the following aspects of data privacy is NOT explicitly addressed in the FIPP?",
-    options: [
-      "The ability to access and correct personal data",
-      "The right to be forgotten",
-      "The requirement for secret personal data record-keeping systems",
-      "The need for individual consent for data collection"
-    ],
-    answer: "The right to be forgotten"
-  },
-  {
-    question: "Under India's DPDP Act, which of the following correctly describes the role of a Data Processor?",
-    options: [
-      "The individual whose personal data is collected and processed",
-      "The entity that determines the purpose and means of processing personal data",
-      "The entity that processes personal data on behalf of the Data Fiduciary",
-      "The government which is enforcing the Act"
-    ],
-    answer: "The entity that processes personal data on behalf of the Data Fiduciary"
-  },
-  {
-    question: "Which of the following are important reasons why information privacy is significant for organizations? (Select all that apply)",
-    options: [
-      "Protect sensitive customer and employee data from unauthorized access",
-      "Comply with legal and regulatory requirements related to data protection",
-      "To increase the amount of data collected regardless of its relevance for business competition",
-      "To maintain customer trust and protect the organization's reputation",
-      "Avoid financial penalties and legal consequences due to data breaches"
+      "users",
+      "--passwords",
+      "-current-user",
+      "hostname"
     ],
     answer: [
-      "Protect sensitive customer and employee data from unauthorized access",
-      "Comply with legal and regulatory requirements related to data protection",
-      "To maintain customer trust and protect the organization's reputation",
-      "Avoid financial penalties and legal consequences due to data breaches"
-    ]
-  },
-
-  // --- Week 10: Assignment 10 (10 Questions) ---
-  {
-    question: "_________ is the phenomenon where individuals claim to value privacy, yet in practice, they trade their personal data for trivial benefits or fail to use measures to protect their privacy.",
-    options: [
-      "Privacy Fatigue",
-      "Privacy Negligence",
-      "Privacy Paradox",
-      "Privacy Breach"
-    ],
-    answer: "Privacy Paradox"
-  },
-  {
-    question: "Which of the following is not true:",
-    options: [
-      "Personally Identifiable Information (PII) refers to any data that can be linked to a specific individual and used to reveal or misuse their identity",
-      "A social security number (SSN) can be considered as a sensitive PII",
-      "A person’s medical records can be considered as a non-sensitive PII",
-      "Non-sensitive PII would not cause significant harm to a person if leaked or stolen"
-    ],
-    answer: "A person’s medical records can be considered as a non-sensitive PII"
-  },
-  {
-    question: "Which of the following best distinguishes the Right to Privacy from the Right to Anonymity?",
-    options: [
-      "Privacy is about preventing identity disclosure, while anonymity is about protecting personal information",
-      "Privacy ensures control over personal data and how it is shared, while anonymity ensures that actions cannot be traced back to an identifiable individual",
-      "Privacy is a technical safeguard, while anonymity is a legal right",
-      "Privacy applies only to digital data, while anonymity applies only to physical identity"
-    ],
-    answer: "Privacy ensures control over personal data and how it is shared, while anonymity ensures that actions cannot be traced back to an identifiable individual"
-  },
-  {
-    question: "True or False: Personal data that has been de-identified, encrypted or pseudonymised, but can be used to re-identify a person, remains personal data and falls within the scope of the GDPR.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: "True"
-  },
-  {
-    question: "_________ has been defined as the intentional concealment of information.",
-    options: [
-      "Security",
-      "Anonymity",
-      "Confidentiality",
-      "Secrecy"
-    ],
-    answer: "Secrecy"
-  },
-  {
-    question: "British law embraces privacy as _________.",
-    options: [
-      "Security",
-      "Anonymity",
-      "Confidentiality",
-      "Secrecy"
-    ],
-    answer: "Confidentiality"
-  },
-  {
-    question: "Which of the statements about pseudonymization is true?",
-    options: [
-      "Pseudonymization is a technique proposed by frameworks like Privacy by Design offering practical substitutes for using the raw data, especially when this data is sensitive",
-      "Various pseudonymization techniques enable you to preserve format or understand the original intention for that data",
-      "Pseudonymization methods often maintain the capability to establish connections between data, which proves beneficial when linking datasets using personal identifiers or other sensitive columns",
-      "All the above"
-    ],
-    answer: "All the above"
-  },
-  {
-    question: "Differential privacy is:",
-    options: [
-      "A method of probabilistically limiting the amount of information an attacker can gain when data is released",
-      "A method for measuring and monitoring the loss of privacy experienced by an individual in a dataset that has been released",
-      "One of the most effective methods for providing individuals in a dataset with plausible deniability while still performing data analysis",
-      "All the above"
-    ],
-    answer: "All the above"
-  },
-  {
-    question: "Which of the following statement is not true about k-anonymity?",
-    options: [
-      "k-anonymity is an intuitive and widely used method for modifying data for privacy protection",
-      "For k-anonymity to be achieved, there need to be at least k+1 individuals in the dataset who share the set of attributes that might become identifying for each individual",
-      "Generalization is a method for achieving K-Anonymity",
-      "k-anonymity can be provided by using suppression techniques"
-    ],
-    answer: "For k-anonymity to be achieved, there need to be at least k+1 individuals in the dataset who share the set of attributes that might become identifying for each individual"
-  },
-  {
-    question: "Which of the following statements is/are correct? (Select all that apply)",
-    options: [
-      "Privacy-preserving data mining enables the extraction of insights from datasets while ensuring that the identities of data subjects or confidential information remain undisclosed",
-      "Randomization, anonymyzation and encryption are methods of privacy-preserving data mining.",
-      "The goal of privacy-preserving data mining is to develop data mining methods without increasing the risk of misuse of the data",
-      "Privacy-preserving data mining remove irrelevant data before mining"
-    ],
-    answer: [
-      "Privacy-preserving data mining enables the extraction of insights from datasets while ensuring that the identities of data subjects or confidential information remain undisclosed",
-      "Randomization, anonymyzation and encryption are methods of privacy-preserving data mining.",
-      "The goal of privacy-preserving data mining is to develop data mining methods without increasing the risk of misuse of the data"
-    ]
-  },
-
-  // --- Week 11: Assignment 11 (10 Questions) ---
-  {
-    question: "Within how many hours does GDPR require organizations to report cyber incidents?",
-    options: [
-      "48 hours",
-      "There is no such requirement",
-      "72 hours",
-      "96 hours"
-    ],
-    answer: "72 hours"
-  },
-  {
-    question: "True or False: Privacy is a fundamental right in India.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: "True"
-  },
-  {
-    question: "Which legal basis for processing personal data applies when someone's life is in danger, and the processing is necessary to save it?",
-    options: [
-      "Consent",
-      "Public interest",
-      "Contract",
-      "Vital interests"
-    ],
-    answer: "Vital interests"
-  },
-  {
-    question: "GDPR applies to which of the following organizations?",
-    options: [
-      "Only organizations located in EU",
-      "Any organization, regardless of location, that processes the personal data of individuals in EU",
-      "Only government bodies in EU",
-      "Organizations processing only anonymous data"
-    ],
-    answer: "Any organization, regardless of location, that processes the personal data of individuals in EU"
-  },
-  {
-    question: "Which of the following is/are guiding principles of the GDPR: (Select all that apply)",
-    options: [
-      "Lawfulness, fairness, and transparency",
-      "Purpose limitation",
-      "Data minimization",
-      "Data speculation"
-    ],
-    answer: [
-      "Lawfulness, fairness, and transparency",
-      "Purpose limitation",
-      "Data minimization"
+      "users",
+      "--passwords",
+      "-current-user"
     ]
   },
   {
-    question: "Which of the following is not a valid legal basis for processing personal data under GDPR?",
+    question: "Which of the following are recognized types of XSS attacks?",
     options: [
-      "Consent of the data subject",
-      "Fulfillment of a contract",
-      "Public interest",
-      "Profit maximization"
+      "Stored (persistent) XSS",
+      "Reflected (non-persistent) XSS",
+      "DOM-based XSS",
+      "SQL-based XSS",
+      "Cookie Injection XSS"
     ],
-    answer: "Profit maximization"
-  },
-  {
-    question: "True or False: GDPR doesn't mandate the exact security measures organizations must take.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: "True"
-  },
-  {
-    question: "Which of the following best describes the concept of data localization in India?",
-    options: [
-      "Permanent deletion of all sensitive data",
-      "Mandatory storage and processing of certain data within the country’s borders",
-      "Making data available to all global users",
-      "Storing data only on cloud servers outside India"
-    ],
-    answer: "Mandatory storage and processing of certain data within the country’s borders"
-  },
-  {
-    question: "Under GDPR, which of the following is a key responsibility of the Data Protection Officer (DPO)?",
-    options: [
-      "Designing the firm’s IT infrastructure",
-      "Advising on and monitoring firm’s compliance with data protection laws",
-      "Managing all financial transactions",
-      "Hiring and firing employees"
-    ],
-    answer: "Advising on and monitoring firm’s compliance with data protection laws"
-  },
-  {
-    question: "In the context of Aadhaar data, who would be considered the Data Principal?",
-    options: [
-      "The Unique Identification Authority of India (UIDAI)",
-      "The individual to whom the Aadhaar number and related data belong",
-      "The service providers using Aadhaar authentication",
-      "The government agency processing the data"
-    ],
-    answer: "The individual to whom the Aadhaar number and related data belong"
+    answer: [
+      "Stored (persistent) XSS",
+      "Reflected (non-persistent) XSS",
+      "DOM-based XSS"
+    ]
   },
 
-  // --- Week 12: Assignment 12 (10 Questions) ---
+  // --- Week 12: Nmap Scanning and Wireshark (10 Questions) ---
   {
-    question: "What does Prospect Theory suggest about how people perceive gains and losses?",
+    question: "Which option is used for ICMP echo sweep in NMAP?",
     options: [
-      "People value all gains and losses equally",
-      "Individuals are more likely to take risks for potential gains",
-      "Losses are typically felt more intensely than gains",
-      "People only care about maximizing their financial gains"
+      "-PE",
+      "-PS",
+      "-PP",
+      "-PM"
     ],
-    answer: "Losses are typically felt more intensely than gains"
+    answer: "-PE"
   },
   {
-    question: "An employee believes that the personal data on their device is more valuable than others perceive, simply because it belongs to them. This is an example of which cognitive bias?",
+    question: "In ICMP Sweep, receiving ICMP Type 0 reply indicates:",
     options: [
-      "Anchoring Bias",
-      "Endowment Effect",
-      "Confirmation Bias",
-      "Availability Heuristic"
+      "Target host is down",
+      "Target host is alive",
+      "Target host is filtered",
+      "None of these."
     ],
-    answer: "Endowment Effect"
+    answer: "Target host is alive"
   },
   {
-    question: "Which design approach is best recommended to address privacy concerns with digital contact tracing applications?",
+    question: "By default NMAP scans how many ports?",
     options: [
-      "Implement a centralized architecture where all contact tracing data is stored and processed by a single authority",
-      "Develop a decentralized, privacy-preserving architecture that minimizes the sharing of personal data",
-      "Prioritize public health benefits over individual privacy protections in the design of contact tracing systems",
-      "Require mandatory participation in contact tracing programs to maximize the effectiveness of the technology"
+      "10",
+      "100",
+      "1000",
+      "65536"
     ],
-    answer: "Develop a decentralized, privacy-preserving architecture that minimizes the sharing of personal data"
+    answer: "1000"
   },
   {
-    question: "Which of the following is an example of the privacy paradox by an action of a user?",
+    question: "Which option makes NMAP treat all host as online (skip host discovery)?",
     options: [
-      "Reads a website's privacy policy in detail before signing up",
-      "Chooses to pay for a service to avoid targeted ads",
-      "Expresses concern about data collection but uses free social media services",
-      "Deletes their old accounts to protect their personal information"
+      "-SP",
+      "-PO",
+      "-Pn",
+      "-F"
     ],
-    answer: "Expresses concern about data collection but uses free social media services"
+    answer: "-Pn"
   },
   {
-    question: "In the typical case of privacy valuation, the relationship between Willingness-to-Accept (WTA) and Willingness-to-Pay (WTP) is:",
+    question: "Which scanning technique uses full 3-way handshake?",
     options: [
-      "WTA < WTP",
-      "WTA = WTP",
-      "WTA > WTP",
-      "No relationship between WTA and WTP"
+      "TCP SYN scan",
+      "TCP Connect scan",
+      "ICMP Sweep scan",
+      "FIN scan"
     ],
-    answer: "WTA > WTP"
+    answer: "TCP Connect scan"
   },
   {
-    question: "Which of the following is true about privacy valuation?",
+    question: "Assume we are running Wireshark in a host, if the NIC of the host is set in promiscuous mode, what Wireshark will do:",
     options: [
-      "Privacy valuation is consistent across all individuals and contexts",
-      "Privacy valuation is influenced by external factors and remains stable over time",
-      "Privacy valuation has variability and is context driven",
-      "Privacy valuation is solely determined by economic factors and market trends"
+      "It will capture packets only oriented to that host",
+      "It will capture all packets in the same network segment in which host is connected.",
+      "It will encrypt all captured packet.",
+      "It will block all malicious traffic."
     ],
-    answer: "Privacy valuation has variability and is context driven"
+    answer: "It will capture all packets in the same network segment in which host is connected."
   },
   {
-    question: "What is the core idea behind the privacy calculus?",
+    question: "Which of the following NMAP option is used for OS discovery?",
     options: [
-      "Individuals make irrational decisions about sharing personal information",
-      "Individuals engage in a cost-benefit analysis to decide whether to disclose personal data",
-      "Individuals do not have any control over the disclosure of their personal information",
-      "Individuals are solely motivated by the potential benefits of data sharing"
+      "-0",
+      "-TO",
+      "-SO",
+      "None of these"
     ],
-    answer: "Individuals engage in a cost-benefit analysis to decide whether to disclose personal data"
+    answer: "-0"
   },
   {
-    question: "Why is understanding the value that individuals assign to the protection of their personal data important for businesses?",
+    question: "Which of the following can be detected using service/version detection (-sV)?",
     options: [
-      "To enable businesses to use personal data for maximum commercial gain",
-      "To help businesses develop privacy-enhancing initiatives that can provide a competitive advantage",
-      "To allow businesses to mandate strict data collection and usage policies without considering consumer preferences",
-      "To facilitate the creation of personal data trading markets where individuals can monetize their information"
+      "Application name",
+      "Application version",
+      "OS fingerprint",
+      "Vulnerability status"
     ],
-    answer: "To help businesses develop privacy-enhancing initiatives that can provide a competitive advantage"
+    answer: ["Application name", "Application version"]
   },
   {
-    question: "A father took photos of his sick toddler to share with a doctor. An automated system flagged the images as child abuse material and flagged the father as a criminal. This incident highlights which key concern in information privacy?",
+    question: "Which NMAP option allows scanning only the most common 10 ports?",
     options: [
-      "Accuracy and fairness in automated systems",
-      "Data minimization",
-      "Right to be forgotten",
-      "Encryption of personal data"
+      "p 10",
+      "-r 10",
+      "--top-ports 10",
+      "-top 10"
     ],
-    answer: "Accuracy and fairness in automated systems"
+    answer: "--top-ports 10"
   },
   {
-    question: "During online checkout, a retailer asks customers for shipping addresses and contact details to deliver orders. However, it also requests marital status and income, which are not relevant. This violates which privacy principle?",
+    question: "In which default format does Wireshark save captured packets?",
     options: [
-      "Data Portability",
-      "Data Minimization",
-      "Purpose Limitation",
-      "Transparency Requirement"
+      ".txt",
+      ".csv",
+      ".xml",
+      ".pcapng/.pcap"
     ],
-    answer: "Data Minimization"
+    answer: ".pcapng/.pcap"
   }
 ];
